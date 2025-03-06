@@ -1,0 +1,89 @@
+{
+  "customerReferenceNumber": "EQ-EQ-275-051-608-R",
+  "status": "draft",
+  "applicant": {
+    "person": {
+      "title": "ms",
+      "firstName": "Huyen",
+      "middleName": "Khanh",
+      "lastName": "Tran",
+      "residentialAddress": {
+        "streetAddress": "1100/120 Street Name Avenue ",
+        "city": "ABBOTSFORD",
+        "region": { "code": "ACT" },
+        "postalCode": "1002",
+        "country": { "code": "AU" }
+      },
+      "postalAddress": {
+        "streetAddress": "1100/120 Street Name Avenue ",
+        "city": "ABBOTSFORD",
+        "region": { "code": "ACT" },
+        "postalCode": "1002",
+        "country": { "code": "AU" }
+      },
+      "emailAddresses": [
+        { "type": "work", "value": "huyen.tran@mail.com", "isPreferred": true }
+      ],
+      "phoneNumbers": [
+        { "type": "mobile", "value": "61424234324", "isPreferred": true }
+      ],
+      "dateOfBirth": "1997-11-16",
+      "gender": "female",
+      "nationalities": [{ "country": "AU", "type": "citizen" }]
+    },
+    "employment": { "category": "Managers", "type": "ICT Managers" },
+    "marketingOptedOut": false,
+    "identityVerification": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-05T10:09:43.442Z"
+    },
+    "screeningResults": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-05T10:09:43.442Z"
+    },
+    "taxDetails": [
+      {
+        "country": "AU",
+        "isSupplied": false,
+        "nonSupplyReasonCode": "000000000"
+      }
+    ],
+    "entityType": "Individual"
+  },
+  "tradingProduct": {
+    "type": "domestic-equities",
+    "canTradeWarrants": true,
+    "contractNote": { "type": "digital", "generationType": "day" }
+  },
+  "termsAndConditions": {
+    "accepted": true,
+    "methodOfAcceptance": "digital",
+    "timestamp": "2025-03-05T10:09:43.383Z"
+  },
+  "settlement": {
+    "details": [
+      {
+        "accountName": "Huyen Khanh Tran",
+        "branchCode": "182512",
+        "accountNumber": "000123456789",
+        "usedForCredits": true,
+        "usedForDebits": true,
+        "usedForDividends": true,
+        "type": "Direct_Entry_Account"
+      }
+    ],
+    "nettingPolicy": "net",
+    "holdFunds": false,
+    "redirectDividends": true
+  },
+  "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
+  "holdingDetails": {
+    "hin": "12220",
+    "pid": "01027",
+    "address": {
+      "addressLines": ["1100/120 Street Name Avenue "],
+      "postCode": "1002"
+    },
+    "emailAddress": "huyen.tran@mail.com"
+  }
+}

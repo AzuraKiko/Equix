@@ -1,0 +1,49 @@
+// Compare ko thêm cột
+const compareObjects = (obj1, obj2, columnNames) => {
+    let result = [];
+
+    // Đặt tên cột mặc định
+    const defaultColumnNames = {
+        fieldName: "Field Name",
+        compareValue: "Compare Value",
+        expectedValue: "Expected Value",
+        matchResult: "Match Result",
+    };
+
+    // Merge tên cột tùy chỉnh với mặc định
+    columnNames = { ...defaultColumnNames, ...columnNames };
+
+    // Lấy danh sách các key có chung giữa obj1 và obj2
+    // let commonKeys = Object.keys(obj1).filter(key => Object.keys(obj2).includes(key));
+    let commonKeys = new Set([...Object.keys(obj1), ...Object.keys(obj2)])
+
+
+    // So sánh từng key chung
+    commonKeys.forEach(key => {
+        result.push({
+            [columnNames.fieldName]: key,
+            [columnNames.compareValue]: obj1[key],
+            [columnNames.expectedValue]: obj2[key],
+            [columnNames.matchResult]: obj1[key] === obj2[key] ? "✅" : "❌"
+        });
+    });
+    // console.table(result);
+    // console.table(result.filter((r) => r[columnNames.matchResult] === "❌"));
+
+    return result;
+};
+
+module.exports = { compareObjects };
+
+
+// let obj1 = { name: "John", age: 25, city: "New York" };
+// let obj2 = { name: "John", age: 25, city: "Los Angeles" };
+
+// const ColumnNames = {
+//     fieldName: "fieldName",
+//     compareValue: "compareValue",
+//     expectedValue: "expectedValue",
+//     matchResult: "matchResult"
+// };
+
+// console.table(compareObjects(obj1, obj2, ColumnNames ));

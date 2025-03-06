@@ -1,0 +1,229 @@
+{
+  "customerReferenceNumber": "EQ-EQ-685-970-569-A",
+  "status": "draft",
+  "applicant": {
+    "entityType": "Trust",
+    "accountDesignation": "0223334455",
+    "emailAddresses": [
+      { "type": "work", "value": "huyen.tran@mail.com", "isPreferred": true }
+    ],
+    "governedByTrustDeed": true,
+    "marketingOptedOut": false,
+    "industryClassification": { "categoryCode": "A", "typeCode": "01" },
+    "registeredAddress": { "country": { "code": "AU" } },
+    "postalAddress": { "country": { "code": "AU" } },
+    "trustees": [
+      {
+        "person": {
+          "title": "ms",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
+          "residentialAddress": {
+            "streetAddress": "1232/1998 Test street name ALLEY",
+            "city": "ABCD",
+            "region": { "code": "ACT" },
+            "postalCode": "1999",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "1232/1998 Test street name ALLEY",
+            "city": "ABCD",
+            "region": { "code": "ACT" },
+            "postalCode": "1999",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "huyen.tran@mail.com",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61424234234", "isPreferred": true }
+          ],
+          "dateOfBirth": "1998-11-11",
+          "gender": "female",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      },
+      {
+        "person": {
+          "title": "mr",
+          "firstName": "Duc",
+          "middleName": "Van",
+          "lastName": "Pham",
+          "residentialAddress": {
+            "streetAddress": "20 Scalby Street",
+            "city": "SCARBOROUGH",
+            "region": { "code": "WA" },
+            "postalCode": "6019",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "20 Scalby Street",
+            "city": "SCARBOROUGH",
+            "region": { "code": "WA" },
+            "postalCode": "6019",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "duc.pham@mail.com",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61424234324", "isPreferred": true }
+          ],
+          "dateOfBirth": "2002-12-12",
+          "gender": "male",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      },
+      {
+        "person": {
+          "title": "ms",
+          "firstName": "Quynh",
+          "middleName": "Thi",
+          "lastName": "Quynh",
+          "residentialAddress": {
+            "streetAddress": "11 Scalby Street",
+            "city": "SCARBOROUGH",
+            "region": { "code": "WA" },
+            "postalCode": "6019",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "11 Scalby Street",
+            "city": "SCARBOROUGH",
+            "region": { "code": "WA" },
+            "postalCode": "6019",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "quynh.bui@mail.com",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61424324234", "isPreferred": true }
+          ],
+          "dateOfBirth": "2001-10-22",
+          "gender": "female",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      }
+    ],
+    "identityVerification": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-05T10:25:06.609Z"
+    },
+    "screeningResults": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-05T10:25:06.609Z"
+    },
+    "settlor": { "isDeceased": false, "assetContributionIsImmaterial": true }
+  },
+  "tradingProduct": {
+    "type": "domestic-equities",
+    "canTradeWarrants": true,
+    "contractNote": { "type": "digital", "generationType": "day" }
+  },
+  "termsAndConditions": {
+    "accepted": true,
+    "methodOfAcceptance": "digital",
+    "timestamp": "2025-03-05T10:22:28.008Z"
+  },
+  "settlement": {
+    "details": [
+      {
+        "accountName": "Huyen Khanh Tran - Duc Van Pham - Quynh Thi Quynh",
+        "branchCode": "182512",
+        "accountNumber": "000123456789",
+        "usedForCredits": true,
+        "usedForDebits": true,
+        "usedForDividends": true,
+        "type": "Direct_Entry_Account"
+      }
+    ],
+    "nettingPolicy": "net",
+    "holdFunds": false,
+    "redirectDividends": true
+  },
+  "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
+  "holdingDetails": {
+    "hin": "24234234",
+    "pid": "01027",
+    "address": {
+      "addressLines": [
+        "1232/1998 Test street name ALLEY",
+        "20 Scalby Street",
+        "11 Scalby Street"
+      ],
+      "postCode": "1999"
+    },
+    "emailAddress": "huyen.tran@mail.com"
+  }
+}

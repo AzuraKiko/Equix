@@ -1,0 +1,138 @@
+{
+  "customerReferenceNumber": "EQ-EQ-186-936-096-A",
+  "status": "draft",
+  "applicant": {
+    "parties": [
+      {
+        "person": {
+          "title": "mr",
+          "firstName": "xgxfg",
+          "lastName": "xfgxgx",
+          "residentialAddress": {
+            "streetAddress": "111J Main Street",
+            "city": "BLACKTOWN",
+            "region": { "code": "NSW" },
+            "postalCode": "2148",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "111J Main Street",
+            "city": "BLACKTOWN",
+            "region": { "code": "NSW" },
+            "postalCode": "2148",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            { "type": "work", "value": "hhgc@gmail.com", "isPreferred": true }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61465656666", "isPreferred": true }
+          ],
+          "dateOfBirth": "2000-06-12",
+          "gender": "male",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2024-09-04T07:12:55.315Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2024-09-04T07:12:55.315Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      },
+      {
+        "person": {
+          "title": "mr",
+          "firstName": "xgxfg",
+          "lastName": "xfgxf",
+          "residentialAddress": {
+            "streetAddress": "111J Main Street",
+            "city": "BLACKTOWN",
+            "region": { "code": "NSW" },
+            "postalCode": "2148",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "111J Main Street",
+            "city": "BLACKTOWN",
+            "region": { "code": "NSW" },
+            "postalCode": "2148",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            { "type": "work", "value": "gfxfgx@gmail.com", "isPreferred": true }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61465663636", "isPreferred": true }
+          ],
+          "dateOfBirth": "2000-06-12",
+          "gender": "male",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2024-09-04T07:12:55.315Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2024-09-04T07:12:55.315Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      }
+    ],
+    "entityType": "Joint"
+  },
+  "tradingProduct": {
+    "type": "domestic-equities",
+    "canTradeWarrants": true,
+    "contractNote": { "type": "digital", "generationType": "day" }
+  },
+  "termsAndConditions": {
+    "accepted": true,
+    "methodOfAcceptance": "digital",
+    "timestamp": "2024-09-04T07:12:55.315Z"
+  },
+  "settlement": {
+    "details": [
+      {
+        "accountName": "Xgxfg Xfgxgx - Xgxfg Xfgxf",
+        "branchCode": "182512",
+        "accountNumber": "000123456789",
+        "usedForCredits": true,
+        "usedForDebits": true,
+        "usedForDividends": true,
+        "type": "Direct_Entry_Account"
+      }
+    ],
+    "nettingPolicy": "net",
+    "holdFunds": false,
+    "redirectDividends": true
+  },
+  "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
+  "holdingDetails": {
+    "hin": "567894123",
+    "pid": "06382",
+    "address": { "addressLines": ["5678 Elm St"], "postCode": "2001" },
+    "emailAddress": "info@bartell.com.au"
+  }
+}

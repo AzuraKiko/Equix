@@ -1,0 +1,193 @@
+{
+  "customerReferenceNumber": "EQ-EQ-640-922-491-R",
+  "status": "draft",
+  "applicant": {
+    "entityType": "Trust",
+    "name": "trust me bro",
+    "type": "family",
+    "accountDesignation": "DUC PHAM DEP TRAI",
+    "emailAddresses": [
+      {
+        "type": "work",
+        "value": "duc.pham+1023@equix.com.au",
+        "isPreferred": true
+      }
+    ],
+    "establishmentLocation": "AU",
+    "governedByTrustDeed": true,
+    "marketingOptedOut": false,
+    "industryClassification": { "categoryCode": "A", "typeCode": "01" },
+    "registeredAddress": {
+      "streetAddress": "2 Uytdehaag Court",
+      "city": "HORSHAM",
+      "region": { "code": "VIC" },
+      "postalCode": "3400",
+      "country": { "code": "AU" }
+    },
+    "postalAddress": {
+      "streetAddress": "2 Uytdehaag Court",
+      "city": "HORSHAM",
+      "region": { "code": "VIC" },
+      "postalCode": "3400",
+      "country": { "code": "AU" }
+    },
+    "trustees": [
+      {
+        "person": {
+          "title": "mr",
+          "firstName": "duc",
+          "lastName": "pham",
+          "residentialAddress": {
+            "streetAddress": "97 Tucki Road",
+            "city": "TUCKI TUCKI",
+            "region": { "code": "NSW" },
+            "postalCode": "2480",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "97 Tucki Road",
+            "city": "TUCKI TUCKI",
+            "region": { "code": "NSW" },
+            "postalCode": "2480",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "duc.pham+1023@equix.com.au",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61418262198", "isPreferred": true }
+          ],
+          "dateOfBirth": "1999-11-19",
+          "gender": "male",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "role": "DIRECTOR",
+        "isCompanyBeneficialOwner": false,
+        "isTrustBeneficialOwner": true,
+        "isTrustBeneficiary": true,
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      }
+    ],
+    "beneficiaryDetails": [
+      {
+        "person": {
+          "title": "mr",
+          "firstName": "duc",
+          "lastName": "pham",
+          "residentialAddress": {
+            "streetAddress": "97 Tucki Road",
+            "city": "TUCKI TUCKI",
+            "region": { "code": "NSW" },
+            "postalCode": "2480",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "97 Tucki Road",
+            "city": "TUCKI TUCKI",
+            "region": { "code": "NSW" },
+            "postalCode": "2480",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "duc.pham+1023@equix.com.au",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61418262198", "isPreferred": true }
+          ],
+          "dateOfBirth": "1999-11-19",
+          "gender": "male",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "role": "DIRECTOR",
+        "isCompanyBeneficialOwner": false,
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "trust-beneficiary-individual",
+        "isBeneficialOwner": true
+      }
+    ],
+    "identityVerification": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-05T10:20:31.325Z"
+    },
+    "screeningResults": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-05T10:20:31.325Z"
+    }
+  },
+  "tradingProduct": {
+    "type": "domestic-equities",
+    "canTradeWarrants": true,
+    "contractNote": { "type": "digital", "generationType": "day" }
+  },
+  "termsAndConditions": {
+    "accepted": true,
+    "methodOfAcceptance": "digital",
+    "timestamp": "2025-03-05T10:20:09.716Z"
+  },
+  "settlement": {
+    "details": [
+      {
+        "accountName": "Duc Pham",
+        "branchCode": "182512",
+        "accountNumber": "000123456789",
+        "usedForCredits": true,
+        "usedForDebits": true,
+        "usedForDividends": true,
+        "type": "Direct_Entry_Account"
+      }
+    ],
+    "nettingPolicy": "net",
+    "holdFunds": false,
+    "redirectDividends": false
+  },
+  "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
+  "holdingDetails": {
+    "hin": "6921837421",
+    "pid": "01027",
+    "address": { "addressLines": ["97 Tucki Road"], "postCode": "2480" },
+    "emailAddress": "duc.pham+1023@equix.com.au"
+  }
+}

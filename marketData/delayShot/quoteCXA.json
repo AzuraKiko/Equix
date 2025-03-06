@@ -1,0 +1,25 @@
+[
+  {
+    "exchange": "CXA",
+    "symbol": "ANZ",
+    "ask_price": 34.52,
+    "ask_size": 2,
+    "bid_price": 23.02,
+    "bid_size": 2,
+    "change_percent": -1.095964,
+    "change_point": -0.41,
+    "close": 48,
+    "high": 5,
+    "low": 39,
+    "open": 54,
+    "trade_price": 37,
+    "trade_size": 58,
+    "updated": 1740398981202,
+    "volume": 45,
+    "previous_close": 37.41,
+    "value_traded": 9836179.885,
+    "is_close_updated": true,
+    "pnl_price_type": "TRADING",
+    "indicative_price": 45.71
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "13b1b119-246a-4c9b-9a2c-93688a5a8e50": {
+      "price": 39,
+      "quantity": 8,
+      "id": 1740459963500,
+      "time": 1740459963417,
+      "source": "CXA"
+    },
+    "bbf577e5-f1aa-4b93-9622-1dc3ce3cf1ce": {
+      "price": 40,
+      "quantity": 55,
+      "id": 1740459961491,
+      "time": 1740459961407,
+      "source": "CXA"
+    },
+    "91d35ac3-769e-44b0-8bcb-3f7e79c31336": {
+      "price": 35,
+      "quantity": 38,
+      "id": 1740459959489,
+      "time": 1740459959405,
+      "source": "CXA"
+    },
+    "2d9f44d5-25f1-494b-badb-d01ca4f2c030": {
+      "price": 37,
+      "quantity": 16,
+      "id": 1740459910716,
+      "time": 1740459910621,
+      "source": "CXA"
+    },
+    "88cc0119-d1aa-4ea5-b718-dee5c0a83a9d": {
+      "price": 39,
+      "quantity": 24,
+      "id": 1740459908700,
+      "time": 1740459908617,
+      "source": "CXA"
+    },
+    "63b83752-8a82-4a95-809b-026cbad16a95": {
+      "price": 37,
+      "quantity": 21,
+      "id": 1740459906698,
+      "time": 1740459906612,
+      "source": "CXA"
+    },
+    "721aa57f-dc01-4c15-9781-b24177618cad": {
+      "price": 38,
+      "quantity": 86,
+      "id": 1740459904696,
+      "time": 1740459904611,
+      "source": "CXA"
+    },
+    "ccf75164-eb8d-4838-99ab-0efd3ac92306": {
+      "price": 35,
+      "quantity": 4,
+      "id": 1740459902700,
+      "time": 1740459902610,
+      "source": "CXA"
+    },
+    "f3a8ad32-3982-4dcc-8664-ece37bd4727c": {
+      "price": 37,
+      "quantity": 67,
+      "id": 1740459900691,
+      "time": 1740459900604,
+      "source": "CXA"
+    },
+    "dda8694d-c969-4ff2-b9f3-d8a067394d14": {
+      "price": 35,
+      "quantity": 73,
+      "id": 1740459898690,
+      "time": 1740459898601,
+      "source": "CXA"
+    },
+    "493effc3-7673-4b88-a8a7-da55ae890c27": {
+      "price": 37,
+      "quantity": 64,
+      "id": 1740459896680,
+      "time": 1740459896599,
+      "source": "CXA"
+    },
+    "82c8e3a0-ac27-40e9-92b7-84fd9b17a6bc": {
+      "price": 37,
+      "quantity": 40,
+      "id": 1740459894680,
+      "time": 1740459894595,
+      "source": "CXA"
+    },
+    "4bda96c0-6037-4864-88ad-cb2ca2450454": {
+      "price": 39,
+      "quantity": 9,
+      "id": 1740459892671,
+      "time": 1740459892591,
+      "source": "CXA"
+    },
+    "628f093b-7781-4c50-a966-f5e03aa73ef8": {
+      "price": 39,
+      "quantity": 93,
+      "id": 1740459891292,
+      "time": 1740459890591,
+      "source": "CXA"
+    },
+    "5878bee9-0f65-485b-b105-64a62099e2ba": {
+      "price": 39,
+      "quantity": 1,
+      "id": 1740459892653,
+      "time": 1740459888586,
+      "source": "CXA"
+    },
+    "0b0f54e6-b252-4556-a723-76508934aae3": {
+      "price": 36,
+      "quantity": 5,
+      "id": 1740459886668,
+      "time": 1740459886584,
+      "source": "CXA"
+    },
+    "7b1ff933-a546-4cff-91b2-ecd6cd602407": {
+      "price": 36,
+      "quantity": 5,
+      "id": 1740459892477,
+      "time": 1740459886584,
+      "source": "CXA"
+    },
+    "33b0e1c0-0741-4739-b29a-9b64b6ae29e2": {
+      "price": 36,
+      "quantity": 34,
+      "id": 1740459884665,
+      "time": 1740459884578,
+      "source": "CXA"
+    },
+    "d68db735-0bec-4540-bb27-1586554f9498": {
+      "price": 36,
+      "quantity": 34,
+      "id": 1740459892467,
+      "time": 1740459884578,
+      "source": "CXA"
+    },
+    "a65f54a0-4512-4b99-8871-533fdeef39af": {
+      "price": 35,
+      "quantity": 84,
+      "id": 1740459882664,
+      "time": 1740459882578,
+      "source": "CXA"
+    },
+    "0ef808d1-fcd4-4226-82f7-83c98c39c824": {
+      "price": 35,
+      "quantity": 84,
+      "id": 1740459892193,
+      "time": 1740459882578,
+      "source": "CXA"
+    },
+    "bb227db9-00cc-46fc-b9ed-3d9dd5bc3157": {
+      "price": 40,
+      "quantity": 16,
+      "id": 1740459880658,
+      "time": 1740459880575,
+      "source": "CXA"
+    },
+    "3742c6e0-1003-4a07-b227-ac4e46a6d0b2": {
+      "price": 40,
+      "quantity": 16,
+      "id": 1740459891989,
+      "time": 1740459880575,
+      "source": "CXA"
+    },
+    "641855db-3aee-43c3-8a3b-318941d07ff3": {
+      "price": 38,
+      "quantity": 48,
+      "id": 1740459878660,
+      "time": 1740459878567,
+      "source": "CXA"
+    },
+    "0856188e-e4ba-4b81-9622-835ec50e5440": {
+      "price": 38,
+      "quantity": 48,
+      "id": 1740459891977,
+      "time": 1740459878567,
+      "source": "CXA"
+    },
+    "25eba880-5b87-4c0e-a97e-3e9a4cbc8cd9": {
+      "price": 35,
+      "quantity": 97,
+      "id": 1740459876651,
+      "time": 1740459876567,
+      "source": "CXA"
+    },
+    "053e1ae0-7ddf-4b0b-bb42-cbe92e5f8591": {
+      "price": 35,
+      "quantity": 97,
+      "id": 1740459891763,
+      "time": 1740459876567,
+      "source": "CXA"
+    },
+    "1cfa26ab-3be7-4b7f-b64e-0ad59495fd03": {
+      "price": 39,
+      "quantity": 40,
+      "id": 1740459874647,
+      "time": 1740459874564,
+      "source": "CXA"
+    },
+    "7574690c-4be9-4f0e-8528-2a448f42205c": {
+      "price": 39,
+      "quantity": 40,
+      "id": 1740459891745,
+      "time": 1740459874564,
+      "source": "CXA"
+    },
+    "a123b56b-1508-4447-b472-f005f9cdd7a7": {
+      "price": 38,
+      "quantity": 65,
+      "id": 1740459872648,
+      "time": 1740459872562,
+      "source": "CXA"
+    },
+    "73674b7b-8000-4256-8391-377265e5cdc1": {
+      "price": 36,
+      "quantity": 69,
+      "id": 1740459870638,
+      "time": 1740459870554,
+      "source": "CXA"
+    },
+    "58f8b245-64f1-4a1b-9d53-590bca41eaa4": {
+      "price": 35,
+      "quantity": 83,
+      "id": 1740459827544,
+      "time": 1740459827461,
+      "source": "CXA"
+    },
+    "9814cb36-b779-4f61-9817-fb3f5a05c5c6": {
+      "price": 35,
+      "quantity": 83,
+      "id": 1740459825855,
+      "time": 1740459825456,
+      "source": "CXA"
+    },
+    "22c3f13e-4ae8-4b02-9e63-0f00567c8b0c": {
+      "price": 39,
+      "quantity": 70,
+      "id": 1740459677599,
+      "time": 1740459677510,
+      "source": "CXA"
+    },
+    "8d4beae1-891a-4efc-ae79-a005cbc1e8bc": {
+      "price": 40,
+      "quantity": 76,
+      "id": 1740431380470,
+      "time": 1740431380405,
+      "source": "CXA"
+    },
+    "a8be62a1-9696-49cf-84fd-91dfd6be4409": {
+      "price": 37,
+      "quantity": 13,
+      "id": 1740431378467,
+      "time": 1740431378402,
+      "source": "CXA"
+    },
+    "1118c294-3e07-4ff4-8864-db1fa26904c8": {
+      "price": 35,
+      "quantity": 55,
+      "id": 1740431376463,
+      "time": 1740431376399,
+      "source": "CXA"
+    },
+    "1b767af6-1099-4efd-bbef-665fcfa37afc": {
+      "price": 38,
+      "quantity": 32,
+      "id": 1740431374459,
+      "time": 1740431374395,
+      "source": "CXA"
+    },
+    "ce835261-a91a-4183-bde3-52bf89369a33": {
+      "price": 37,
+      "quantity": 55,
+      "id": 1740431372456,
+      "time": 1740431372394,
+      "source": "CXA"
+    },
+    "f7a86353-e77c-4684-b32b-406804d9858b": {
+      "price": 40,
+      "quantity": 57,
+      "id": 1740431370454,
+      "time": 1740431370390,
+      "source": "CXA"
+    },
+    "7ff0d82e-45cd-4025-9655-acc75f5273f1": {
+      "price": 39,
+      "quantity": 23,
+      "id": 1740431368453,
+      "time": 1740431368387,
+      "source": "CXA"
+    },
+    "ed6a0fd0-92e2-46de-9428-93e5e9b9f612": {
+      "price": 37,
+      "quantity": 60,
+      "id": 1740431366449,
+      "time": 1740431366383,
+      "source": "CXA"
+    },
+    "d8cbe848-45e4-4718-9128-c66cb607c5b4": {
+      "price": 36,
+      "quantity": 51,
+      "id": 1740431364438,
+      "time": 1740431364375,
+      "source": "CXA"
+    },
+    "78585e44-667d-42df-9150-35b549a56226": {
+      "price": 39,
+      "quantity": 67,
+      "id": 1740431362438,
+      "time": 1740431362375,
+      "source": "CXA"
+    },
+    "39200f0c-d1cf-4b93-90ae-65c87786637e": {
+      "price": 36,
+      "quantity": 80,
+      "id": 1740431360422,
+      "time": 1740431360360,
+      "source": "CXA"
+    },
+    "002939fe-b267-4040-88ca-8f57641f2d14": {
+      "price": 35,
+      "quantity": 24,
+      "id": 1740431358425,
+      "time": 1740431358359,
+      "source": "CXA"
+    },
+    "2d44c9d8-337e-447b-af9c-7a70bcc940da": {
+      "price": 39,
+      "quantity": 9,
+      "id": 1740431356418,
+      "time": 1740431356352,
+      "source": "CXA"
+    },
+    "b5afe63a-f959-4c65-97d3-055ccef4700c": {
+      "price": 39,
+      "quantity": 70,
+      "id": 1740431354413,
+      "time": 1740431354349,
+      "source": "CXA"
+    },
+    "1e130a85-2e4c-4688-9f3b-313be734ca63": {
+      "price": 37,
+      "quantity": 78,
+      "id": 1740431352411,
+      "time": 1740431352348,
+      "source": "CXA"
+    },
+    "2ad33b2b-5cfc-4c74-aae9-b89a51c5f2f2": {
+      "price": 37,
+      "quantity": 39,
+      "id": 1740431350413,
+      "time": 1740431350342,
+      "source": "CXA"
+    }
+  }
+]

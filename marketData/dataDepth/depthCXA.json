@@ -1,0 +1,30 @@
+[
+  {
+    "ask": {
+      "0": {
+        "symbol": "ANZ",
+        "side": "Ask",
+        "quantity": 2,
+        "number_of_trades": 1,
+        "price": 34.52,
+        "exchange": "CXA",
+        "timestamp": 1740623721457000,
+        "source": "CXA"
+      }
+    },
+    "bid": {
+      "0": {
+        "symbol": "ANZ",
+        "side": "Bid",
+        "quantity": 2,
+        "number_of_trades": 1,
+        "price": 23.02,
+        "exchange": "CXA",
+        "timestamp": 1740623721908000,
+        "source": "CXA"
+      }
+    },
+    "total_ask_size": 2,
+    "total_bid_size": 2
+  }
+]
