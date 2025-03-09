@@ -1,49 +1,64 @@
 {
-  "customerReferenceNumber": "EQ-EQ-685-970-569-A",
+  "customerReferenceNumber": "EQ-EQ-722-509-267-A",
   "status": "draft",
   "applicant": {
     "entityType": "Trust",
-    "accountDesignation": "0223334455",
+    "name": "Grooo Internal",
+    "type": "self-managed-super-fund",
+    "accountDesignation": "0345453",
     "emailAddresses": [
-      { "type": "work", "value": "huyen.tran@mail.com", "isPreferred": true }
+      { "type": "work", "value": "huyen.tran@yahoo.com", "isPreferred": true }
     ],
+    "establishmentLocation": "AU",
     "governedByTrustDeed": true,
     "marketingOptedOut": false,
     "industryClassification": { "categoryCode": "A", "typeCode": "01" },
-    "registeredAddress": { "country": { "code": "AU" } },
-    "postalAddress": { "country": { "code": "AU" } },
+    "registeredAddress": {
+      "streetAddress": "1204/12 Executive DRIVE ",
+      "city": "BURLEIGH WATERS",
+      "region": { "code": "QLD" },
+      "postalCode": "4220",
+      "country": { "code": "AU" }
+    },
+    "postalAddress": {
+      "streetAddress": "65 Caro Road",
+      "city": "CATABY",
+      "region": { "code": "WA" },
+      "postalCode": "6507",
+      "country": { "code": "AU" }
+    },
     "trustees": [
       {
         "person": {
-          "title": "ms",
+          "title": "miss",
           "firstName": "Huyen",
           "middleName": "Khanh",
           "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "1232/1998 Test street name ALLEY",
-            "city": "ABCD",
-            "region": { "code": "ACT" },
-            "postalCode": "1999",
+            "streetAddress": "6789/98A Blight STREET ",
+            "city": "RENOWN PARK",
+            "region": { "code": "SA" },
+            "postalCode": "5008",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "1232/1998 Test street name ALLEY",
-            "city": "ABCD",
-            "region": { "code": "ACT" },
-            "postalCode": "1999",
+            "streetAddress": "6789/98A Blight STREET ",
+            "city": "RENOWN PARK",
+            "region": { "code": "SA" },
+            "postalCode": "5008",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "huyen.tran@mail.com",
+              "value": "huyen.tran@yahoo.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61424234234", "isPreferred": true }
+            { "type": "mobile", "value": "61423423889", "isPreferred": true }
           ],
-          "dateOfBirth": "1998-11-11",
+          "dateOfBirth": "1998-07-19",
           "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
@@ -52,11 +67,11 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+          "completionTimestamp": "2025-03-07T06:55:01.734Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+          "completionTimestamp": "2025-03-07T06:55:01.734Z"
         },
         "taxDetails": [
           {
@@ -65,93 +80,42 @@
             "nonSupplyReasonCode": "000000000"
           }
         ],
+        "isPrimaryApplicant": true,
         "entityType": "Individual"
-      },
+      }
+    ],
+    "beneficiaryDetails": [
       {
         "person": {
-          "title": "mr",
-          "firstName": "Duc",
-          "middleName": "Van",
-          "lastName": "Pham",
+          "title": "miss",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "20 Scalby Street",
-            "city": "SCARBOROUGH",
-            "region": { "code": "WA" },
-            "postalCode": "6019",
+            "streetAddress": "6789/98A Blight STREET ",
+            "city": "RENOWN PARK",
+            "region": { "code": "SA" },
+            "postalCode": "5008",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "20 Scalby Street",
-            "city": "SCARBOROUGH",
-            "region": { "code": "WA" },
-            "postalCode": "6019",
+            "streetAddress": "6789/98A Blight STREET ",
+            "city": "RENOWN PARK",
+            "region": { "code": "SA" },
+            "postalCode": "5008",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "duc.pham@mail.com",
+              "value": "huyen.tran@yahoo.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61424234324", "isPreferred": true }
+            { "type": "mobile", "value": "61423423889", "isPreferred": true }
           ],
-          "dateOfBirth": "2002-12-12",
-          "gender": "male",
-          "nationalities": [{ "country": "AU", "type": "citizen" }]
-        },
-        "isSignatory": true,
-        "employment": { "category": "Managers", "type": "ICT Managers" },
-        "marketingOptedOut": false,
-        "identityVerification": {
-          "status": "verified",
-          "completionTimestamp": "2025-03-05T10:25:06.609Z"
-        },
-        "screeningResults": {
-          "status": "verified",
-          "completionTimestamp": "2025-03-05T10:25:06.609Z"
-        },
-        "taxDetails": [
-          {
-            "country": "AU",
-            "isSupplied": false,
-            "nonSupplyReasonCode": "000000000"
-          }
-        ],
-        "entityType": "Individual"
-      },
-      {
-        "person": {
-          "title": "ms",
-          "firstName": "Quynh",
-          "middleName": "Thi",
-          "lastName": "Quynh",
-          "residentialAddress": {
-            "streetAddress": "11 Scalby Street",
-            "city": "SCARBOROUGH",
-            "region": { "code": "WA" },
-            "postalCode": "6019",
-            "country": { "code": "AU" }
-          },
-          "postalAddress": {
-            "streetAddress": "11 Scalby Street",
-            "city": "SCARBOROUGH",
-            "region": { "code": "WA" },
-            "postalCode": "6019",
-            "country": { "code": "AU" }
-          },
-          "emailAddresses": [
-            {
-              "type": "work",
-              "value": "quynh.bui@mail.com",
-              "isPreferred": true
-            }
-          ],
-          "phoneNumbers": [
-            { "type": "mobile", "value": "61424324234", "isPreferred": true }
-          ],
-          "dateOfBirth": "2001-10-22",
+          "dateOfBirth": "1998-07-19",
           "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
@@ -160,11 +124,11 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+          "completionTimestamp": "2025-03-07T06:55:01.734Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:25:06.609Z"
+          "completionTimestamp": "2025-03-07T06:55:01.734Z"
         },
         "taxDetails": [
           {
@@ -173,16 +137,18 @@
             "nonSupplyReasonCode": "000000000"
           }
         ],
-        "entityType": "Individual"
+        "isPrimaryApplicant": true,
+        "entityType": "trust-beneficiary-individual",
+        "isBeneficialOwner": false
       }
     ],
     "identityVerification": {
       "status": "verified",
-      "completionTimestamp": "2025-03-05T10:25:06.609Z"
+      "completionTimestamp": "2025-03-07T06:55:01.734Z"
     },
     "screeningResults": {
       "status": "verified",
-      "completionTimestamp": "2025-03-05T10:25:06.609Z"
+      "completionTimestamp": "2025-03-07T06:55:01.734Z"
     },
     "settlor": { "isDeceased": false, "assetContributionIsImmaterial": true }
   },
@@ -194,12 +160,12 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-05T10:22:28.008Z"
+    "timestamp": "2025-03-07T06:53:44.086Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Huyen Khanh Tran - Duc Van Pham - Quynh Thi Quynh",
+        "accountName": "Huyen Khanh Tran - Duc Van Pham - Van Anh Nguyen",
         "branchCode": "182512",
         "accountNumber": "000123456789",
         "usedForCredits": true,
@@ -214,16 +180,16 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "24234234",
-    "pid": "01027",
+    "hin": "24234",
+    "pid": "01042",
     "address": {
       "addressLines": [
-        "1232/1998 Test street name ALLEY",
-        "20 Scalby Street",
-        "11 Scalby Street"
+        "6789/98A Blight STREET ",
+        "34 Lloyd Street",
+        "65 Caro Road"
       ],
-      "postCode": "1999"
+      "postCode": "6507"
     },
-    "emailAddress": "huyen.tran@mail.com"
+    "emailAddress": "huyen.tran@yahoo.com"
   }
 }

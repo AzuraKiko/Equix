@@ -41,17 +41,6 @@ const fieldMappings = {
         type: "string",
         enumMap: { ANDORRA: "AD", AUSTRALIA: "AU", BAHRAIN: "BH" },
     },
-    "applicant.screeningResults": {
-        type: "object",
-    },
-    "applicant.screeningResults.status": {
-        type: "string",
-        defaultValue: "verified",
-    },
-    "applicant.screeningResults.completionTimestamp": {
-        target: "applicant_details[index].uploaded_documents[index].last_updated",
-        type: "string",
-    },
     "applicant.name": {
         target: "trust_name",
         type: "string",
@@ -73,26 +62,16 @@ const fieldMappings = {
         },
     },
     // Nếu applicant.type là "other" thì sẽ có 1 field khác là "otherTrustType" để nhập loại trust khác
+    // This is required if the type is other. Sent to Ausiex if applicant.type = "other"
     "applicant.otherTrustType": {
         target: "trust_description",
         type: ["string", null],
-        enumMap: {
-            FAMILY_TRUST: "family",
-            CHARITABLE_TRUST: "charity",
-            DECEASED_ESTATE: "deceased-estate",
-            DISCRETIONARY_INVESMENT_TRUST: "discretionary",
-            TESTAMENTARY_TRUST: "testamentary",
-            UNIT_TRUST: "other",
-            DISABILITY_TRUST: "other",
-            PROPERTY_TRUST: "other",
-            HYBRID_TRUST: "other",
-            TRADING_TRUST: "other",
-        }
     },
     "applicant.accountDesignation": {
         target: "account_designation",
         type: ["string", null],
     },
+    // Maximum 1 Email Address
     "applicant.emailAddresses": {
         type: "array",
     },
@@ -100,6 +79,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "work",
     },
+    // Get applicant_details.applicant_email of first applicant
     "applicant.emailAddresses[index].value": {
         target: "applicant_details[index].applicant_email",
         type: "string",
@@ -189,6 +169,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport"
     "applicant.trustees[index].identityVerification.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -200,6 +181,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport"
     "applicant.trustees[index].screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -214,7 +196,7 @@ const fieldMappings = {
     "applicant.trustees[index].person.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.trustees[index].person.firstName": {
         target: "applicant_details[index].first_name",
@@ -294,6 +276,7 @@ const fieldMappings = {
         type: "string",
         enumMap: { ANDORRA: "AD", AUSTRALIA: "AU", BAHRAIN: "BH" },
     },
+    // Maximum 1 Email Address
     "applicant.trustees[index].person.emailAddresses": {
         type: "array",
     },
@@ -309,6 +292,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Maximum 4 Phone Numbers
     "applicant.trustees[index].person.phoneNumbers": {
         type: "array",
     },
@@ -358,6 +342,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "Managers"
     },
+    // Maximum 4 Tax Details
     "applicant.trustees[index].taxDetails": {
         type: "array",
     },
@@ -365,6 +350,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
+    // If applicant_details.tfn has value -> applicant.trustees.taxDetails.isSupplied = TRUE. Else, applicant.trustees.taxDetails.isSupplied = FALSE
     "applicant.trustees[index].taxDetails[index].isSupplied": {
         type: "boolean",
     },
@@ -381,9 +367,13 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: false,
     },
-    //Send information of first applicant
+    // Use applicant information with applicant_details.is_trust_beneficiary = true for this object (Update logic)
     "applicant.beneficiaryDetails": {
         type: "array",
+    },
+    "applicant.beneficiaryDetails[index].isBeneficiary": {
+        target: "applicant_details[index].is_trust_beneficiary",
+        type: "boolean",
     },
     "applicant.beneficiaryDetails[index].entityType": {
         type: "string",
@@ -399,7 +389,7 @@ const fieldMappings = {
     "applicant.beneficiaryDetails[index].person.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.beneficiaryDetails[index].person.firstName": {
         target: "applicant_details[index].first_name",
@@ -479,6 +469,7 @@ const fieldMappings = {
         type: "string",
         enumMap: { ANDORRA: "AD", AUSTRALIA: "AU", BAHRAIN: "BH" },
     },
+    // Maximum 1 Email Address
     "applicant.beneficiaryDetails[index].person.emailAddresses": {
         type: "array",
     },
@@ -494,6 +485,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Maximum 4 Phone Numbers
     "applicant.beneficiaryDetails[index].person.phoneNumbers": {
         type: "array",
     },
@@ -543,6 +535,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "Managers"
     },
+    // Maximum 4 Tax Details
     "applicant.beneficiaryDetails[index].taxDetails": {
         type: "array",
     },
@@ -550,6 +543,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
+    // If applicant_details.tfn has value -> applicant.beneficiaryDetails.taxDetails.isSupplied = TRUE. Else, applicant.beneficiaryDetails.taxDetails.isSupplied = FALSE
     "applicant.beneficiaryDetails[index].taxDetails[index].isSupplied": {
         type: "boolean",
     },
@@ -573,6 +567,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport"
     "applicant.beneficiaryDetails[index].screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -589,13 +584,14 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: false,
     },
+    // Ausiex only support Individual settlor, please only select Individual settlor for testing
     "applicant.settlor.name": {
         type: "object",
     },
     "applicant.settlor.name.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.settlor.name.firstName": {
         target: "individual_settlor.settlor_first_name",
@@ -609,6 +605,7 @@ const fieldMappings = {
         target: "individual_settlor.settlor_last_name",
         type: "string",
     },
+    // Maximum 4 Tax Details
     "applicant.taxDetails": {
         type: "array",
     },
@@ -616,11 +613,13 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
+    // If trust_tfn has value -> applicant.taxDetails.isSupplied = TRUE. Else, applicant.taxDetails.isSupplied = FALSE (Updat logic)
     "applicant.taxDetails[index].isSupplied": {
         type: "boolean",
     },
+    // Update trust_tfn
     "applicant.taxDetails[index].taxIdentificationNumber": {
-        target: "super_fund_tfn",
+        target: "trust_tfn",
         type: ["string", null],
     },
     //if isSupplied = FALSE -> send this field with default value
@@ -635,7 +634,20 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport" of the first applicant
     "applicant.identityVerification.completionTimestamp": {
+        target: "applicant_details[index].uploaded_documents[index].last_updated",
+        type: "string",
+    },
+    "applicant.screeningResults": {
+        type: "object",
+    },
+    "applicant.screeningResults.status": {
+        type: "string",
+        defaultValue: "verified",
+    },
+    // Get last_updated of document_file_name starting with "passKYCReport" of the first applicant
+    "applicant.screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
     },
@@ -671,14 +683,17 @@ const fieldMappings = {
     "settlement.details": {
         type: "array",
     },
+    // Names must contain only letters, numbers, spaces, apostrophes, and hyphens.
     "settlement.details[index].accountName": {
         target: "bank_account_name",
         type: "string",
     },
+    // The field must only contain numeric characters
     "settlement.details[index].branchCode": {
         target: "bank_bsb",
         type: "string",
     },
+    // The field must only contain numeric characters
     "settlement.details[index].accountNumber": {
         target: "bank_account_number",
         type: "string",
@@ -703,8 +718,10 @@ const fieldMappings = {
         type: "string",
         defaultValue: "net",
     },
+    // Update settlement.holdFunds, required
     "settlement.holdFunds": {
-        type: ["boolean", null],
+        type: ["boolean"],
+        defaultValue: false,
     },
     "settlement.redirectDividends": {
         type: ["boolean", null],
@@ -718,6 +735,7 @@ const fieldMappings = {
         defaultValue: "uatsentadv152",
         type: ["string", null],
     },
+    // If application is created from onboarding, default tradeable_products.equity = BBJ
     "adviser.brokerageCode": {
         type: ["string", null],
         target: "tradeable_products.equity"
@@ -751,14 +769,17 @@ const fieldMappings = {
     "holdingDetails.address": {
         type: ["object", null],
     },
+    // Get information from all applicants (applicant_details.residential_address_address_line_1). Example: ["34 King Str", "106 HQV", "77 Walking Street"]
     "holdingDetails.address.addressLines": {
         target: "holdingDetails_addressLines",
         type: ["array", null],
     },
+    // If account_type = TRUST_COMPANY/ SUPER_FUND_COMPANY/ TRUST_INDIVIDUAL/ SUPER_FUND_INDIVIDUAL: mailing_address_postcode
     "holdingDetails.address.postCode": {
         target: "mailing_address_postcode",
         type: ["string", null],
     },
+    // If account_type = INDIVIDUAL / JOINT/ COMPANY/ TRUST_INDIVIDUAL/ SUPER_FUND_INDIVIDUAL: applicant_details.applicant_email (1st applicant)
     "holdingDetails.emailAddress": {
         target: "applicant_details[index].applicant_email",
         type: ["string", null],
@@ -773,11 +794,15 @@ const errorsType = applyTypeCheck(ausiexMapping, fieldMappings);
 if (errorsType.length > 0) { console.log(errorsType); }
 
 const key = "holdingDetails.address.addressLines";
-ausiexMapping[key] = ausiexMapping[key].join(", ");
+ausiexMapping[key] = ausiexMapping[key]
+    .map(str => str.trim())
+    .join(", ");
 // Xử lý dữ liệu Equix
-const equixMapping = processEquixData(equixData, fieldMappings);
+let equixMapping = processEquixData(equixData, fieldMappings);
 // console.log(JSON.stringify(equixMapping, null, 2));
-equixMapping[key] = equixMapping[key].join(", ");
+equixMapping[key] = equixMapping[key]
+    .map(str => str.trim()) // Trim khoảng trắng của từng phần tử
+    .join(", ");
 const key2 = "holdingDetails.hin";
 equixMapping[key2] = equixMapping[key2] !== null ? String(equixMapping[key2]) : equixMapping[key2];
 
@@ -785,24 +810,6 @@ const key3 = "applicant.otherTrustType";
 const key4 = "applicant.type";
 (equixMapping[key4] !== "other") ? equixMapping[key3] = undefined : equixMapping[key3];
 
-// Duyệt qua mảng beneficiaryDetails
-if (equixMapping["applicant.beneficiaryDetails"]) {
-    equixMapping["applicant.beneficiaryDetails"].forEach((beneficiary, index) => {
-        if (beneficiary.isBeneficialOwner === false) {
-            // Xóa hoặc thiết lập undefined cho tất cả các key liên quan
-            Object.keys(equixMapping).forEach(key => {
-                if (key.startsWith(`applicant.beneficiaryDetails[${index}]`)) {
-                    equixMapping[key] = undefined; // Thiết lập undefined
-                }
-            });
-        }
-    });
-
-    // Lọc ra các phần tử undefined trong mảng beneficiaryDetails
-    equixMapping["applicant.beneficiaryDetails"] = equixMapping["applicant.beneficiaryDetails"].filter(
-        beneficiary => beneficiary !== undefined
-    );
-}
 
 // Duyệt qua tất cả các key trong equixMapping
 Object.keys(equixMapping).forEach(key => {
@@ -818,17 +825,101 @@ Object.keys(equixMapping).forEach(key => {
         }
     }
 });
+function validateBeneficiaryDetails(data) {
+    let isBeneficiaryMap = {};
+
+    // First, map the isBeneficiary values
+    Object.keys(data).forEach((key) => {
+        const match = key.match(/applicant\.beneficiaryDetails\[(\d+)\]\.isBeneficiary/);
+        if (match) {
+            let index = match[1];
+            isBeneficiaryMap[index] = data[key];
+        }
+    });
+
+    // Then, iterate over all keys and set fields to undefined for non-beneficiaries
+    Object.keys(data).forEach((key) => {
+        const match = key.match(/applicant\.beneficiaryDetails\[(\d+)\]\.(.+)/);
+        if (match) {
+            let index = match[1];
+
+            if (isBeneficiaryMap[index] !== true) {
+                data[key] = undefined; // Set the specific field to undefined
+            }
+        }
+    });
+
+    let newIndex = 0;
+    let updatedData = {};
+    let indexMap = {};
+
+    Object.keys(data).forEach((key) => {
+        const match = key.match(/applicant\.beneficiaryDetails\[(\d+)\]\.(.+)/);
+        if (match) {
+            let oldIndex = match[1];
+            let field = match[2];
+
+            // Nếu giá trị không phải undefined, cập nhật lại chỉ số
+            if (data[key] !== undefined) {
+                // Nếu chỉ số cũ chưa được ánh xạ, tạo một chỉ số mới
+                if (indexMap[oldIndex] === undefined) {
+                    indexMap[oldIndex] = newIndex++;
+                }
+                let newKey = `applicant.beneficiaryDetails[${indexMap[oldIndex]}].${field}`;
+                updatedData[newKey] = data[key];
+            }
+        } else {
+            // Giữ nguyên các trường không thuộc beneficiaryDetails
+            updatedData[key] = data[key];
+        }
+    });
+
+    // Bước 4: Đặt isBeneficiary thành undefined cho các mục còn lại
+    Object.keys(updatedData).forEach((key) => {
+        const match = key.match(/applicant\.beneficiaryDetails\[(\d+)\]\.isBeneficiary/);
+        if (match) {
+            updatedData[key] = undefined; // Luôn đặt isBeneficiary thành undefined
+        }
+    });
+
+    // Bước 5: Lọc các trường có giá trị undefined
+    let finalData = {};
+    Object.keys(updatedData).forEach((key) => {
+        if (updatedData[key] !== undefined) {
+            finalData[key] = updatedData[key];
+        }
+    });
+
+    return finalData;
+}
+
+
+// Duyệt qua tất cả các key trong equixMapping
+Object.keys(equixMapping).forEach(key => {
+    if (key.includes("streetAddress")) {
+        equixMapping[key] = equixMapping[key].trim();
+    }
+});
+
+// Duyệt qua tất cả các key trong ausiexMapping
+Object.keys(ausiexMapping).forEach(key => {
+    if (key.includes("streetAddress")) {
+        ausiexMapping[key] = ausiexMapping[key].trim();
+    }
+});
+equixMapping = validateBeneficiaryDetails(equixMapping);
+
 const columnNames1 = {
     fieldName: "Field Name",
-    compareValue: "Auseix Value",
-    expectedValue: "Equix Value",
+    compareValue: "Actual Value",
+    expectedValue: "Expected Value",
     matchResult: "Match Result",
 };
 
 const columnNames2 = {
     FieldName1: "Field Name",
-    Value1: "Auseix Value",
-    Value2: "Equix Value",
+    Value1: "Actual Value",
+    Value2: "Expected Value",
     MatchResult: "Match Result",
 };
 

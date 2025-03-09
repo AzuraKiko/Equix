@@ -20,7 +20,7 @@ const getDetailOnboarding = async () => {
 
         const data = response.data[0] || {}; // Đảm bảo luôn có dữ liệu
         const content = JSON.stringify(data, null, 2);
-        const type = "super_fund";
+        const type = "joint";
         saveFile(content, `../onboarding/${type}/equix.json`); 
     } catch (error) {
         console.error("Lỗi lấy dữ liệu onboarding:", error.response?.data || error.message);

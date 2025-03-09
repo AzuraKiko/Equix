@@ -96,12 +96,12 @@ const processEquixData = (data, mappings) => {
           }
           if (key.includes("branchCode")) {
             const branchCode = getValueArray(data, "bank_bsb");
-            value = branchCode ? branchCode.replace(/\D/g, "") : undefined;
+            value = branchCode ? branchCode.replace(/\D/g, "") : branchCode;
           } else if (key.includes("accountName")) {
             const accountName = getValueArray(data, "bank_account_name");
             value = accountName
               ? accountName.replace(/[^a-zA-Z0-9 '-]/g, "-")
-              : undefined;
+              : accountName;
           }
 
           // ✅ Nếu giá trị là một mảng, tự động đánh index chính xác
@@ -202,7 +202,6 @@ const processEquixData = (data, mappings) => {
               // ✅ Xử lý riêng cho "holdingDetails.address.postCode" và "holdingDetails.emailAddress"
               if (
                 [
-                  "holdingDetails.address.postCode",
                   "holdingDetails.emailAddress",
                 ].includes(key)
               ) {
@@ -225,28 +224,13 @@ const processEquixData = (data, mappings) => {
       }
     } else {
       if (key.includes("isSupplied")) {
-        const type = Array.isArray(mapping.defaultValue)
+        const type = Array.isArray(value)
           ? "array"
           : typeof value;
         if (!key.includes("trustees") && !key.includes("beneficiaryDetails")) {
-          const tfn3 = getValueArray(data, "super_fund_tfn");
-          value = tfn3 !== null && tfn3 !== undefined;
-
-          applicantDetails.forEach((applicant, applicantIdx) => {
-            if (key.includes("parties[index]")) {
-              replacedKey = key.replaceAll(
-                "parties[index]",
-                `parties[${applicantIdx}]`
-              );
-              result[replacedKey.replace("[index]", `[0]`)] = normalizeValue(
-                value,
-                type
-              );
-            } else {
-              result[key.replace("[index]", `[${applicantIdx}]`)] =
-                normalizeValue(value, type);
-            }
-          });
+            const tfn3 = getValueArray(data, "super_fund_tfn");
+            value = tfn3 !== null && tfn3 !== undefined;
+            result[key.replace("[index]", `[0]`)] = normalizeValue(value, type);
         } else {
           applicantDetails.forEach((applicant, applicantIdx) => {
             const tfn4 = getValueArray(applicant, "tfn");

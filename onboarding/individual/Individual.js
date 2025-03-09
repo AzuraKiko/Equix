@@ -1,7 +1,7 @@
 // Các module chung
 const { readJSONfile } = require("../../common/readJSONfile");
 const { saveFile } = require("../../common/saveFile");
-const { processAusiexData } = require("../base/processAusiex");
+const { flattenObject, applyTypeCheck } = require("../base/processAusiexPro");
 const { processEquixData } = require("../base/processEquixIndividual");
 const { compareObjects } = require("../../common/PareObject");
 
@@ -29,13 +29,14 @@ const fieldMappings = {
     "applicant.person.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
 
     "applicant.person.firstName": {
         target: "applicant_details[index].first_name",
         type: "string",
     },
+    //if "applicant_details.middle_name" = "" => don't send to AusieX
     "applicant.person.middleName": {
         target: "applicant_details[index].middle_name",
         type: ["string", null],
@@ -111,6 +112,7 @@ const fieldMappings = {
         type: "string",
         enumMap: { ANDORRA: "AD", AUSTRALIA: "AU", BAHRAIN: "BH" },
     },
+    // Maximum 1 Email Address
     "applicant.person.emailAddresses": {
         type: "array",
     },
@@ -126,6 +128,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Maximum 4 Phone Numbers
     "applicant.person.phoneNumbers": {
         type: "array",
     },
@@ -133,6 +136,9 @@ const fieldMappings = {
         type: "string",
         defaultValue: "mobile",
     },
+    // Format: {country code} + {area code} + phone number
+    // Example: au|0412312312
+    // => after converting: 61412312312
     "applicant.person.phoneNumbers[index].value": {
         target: "applicant_details[index].applicant_mobile_phone",
         type: "string",
@@ -141,6 +147,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Format: YYYY-MM-DD
     "applicant.person.dateOfBirth": {
         target: "applicant_details[index].dob",
         type: "string",
@@ -182,15 +189,17 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
-    //'If super_fund_tfn has value -> applicant.taxDetails.isSupplied = TRUE
+    //'If applicant_details.tfn has value -> applicant.taxDetails.isSupplied = TRUE
     // Else, applicant.taxDetails.isSupplied = FALSE
     "applicant.taxDetails[index].isSupplied": {
         type: "boolean",
     },
+    // Update applicant_details.tfn
     "applicant.taxDetails[index].taxIdentificationNumber": {
-        target: "super_fund_tfn",
+        target: "applicant_details[index].tfn",
         type: ["string", null],
     },
+    // if applicant.taxDetails.isSupplied = FALSE -> send this field with default value
     "applicant.taxDetails[index].nonSupplyReasonCode": {
         type: ["string", null],
         defaultValue: "000000000",
@@ -202,6 +211,8 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport" of the first applicant
+    // UTC : Format: "2019-08-24T14:15:22Z"
     "applicant.identityVerification.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -213,9 +224,16 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport" of the first applicant
+    // UTC : Format: "2019-08-24T14:15:22Z"
     "applicant.screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
+    },
+    // Update applicant.marketingOptedOut
+    "applicant.marketingOptedOut": {
+        type: "boolean",
+        defaultValue: false,
     },
     tradingProduct: {
         type: "object",
@@ -245,14 +263,17 @@ const fieldMappings = {
     "settlement.details": {
         type: "array",
     },
+    // Names must contain only letters, numbers, spaces, apostrophes, and hyphens.
     "settlement.details[index].accountName": {
         target: "bank_account_name",
         type: "string",
     },
+    // The field must only contain numeric characters
     "settlement.details[index].branchCode": {
         target: "bank_bsb",
         type: "string",
     },
+    // The field must only contain numeric characters
     "settlement.details[index].accountNumber": {
         target: "bank_account_number",
         type: "string",
@@ -277,8 +298,10 @@ const fieldMappings = {
         type: "string",
         defaultValue: "net",
     },
+    // Update value settlement.holdFunds, required 
     "settlement.holdFunds": {
-        type: ["boolean", null]
+        type: ["boolean"],
+        defaultValue: false
     },
     "settlement.redirectDividends": {
         type: ["boolean", null],
@@ -292,6 +315,7 @@ const fieldMappings = {
         defaultValue: "uatsentadv152",
         type: ["string", null],
     },
+    // If application is created from onboarding, default tradeable_products.equity = BBJ
     "adviser.brokerageCode": {
         type: ["string", null],
         target: "tradeable_products.equity"
@@ -307,6 +331,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "digital",
     },
+    // UTC : Format: "2019-08-24T14:15:22Z"
     "termsAndConditions.timestamp": {
         target: "submit_time",
         type: "string",
@@ -325,14 +350,17 @@ const fieldMappings = {
     "holdingDetails.address": {
         type: ["object", null],
     },
+    // Get information from all applicants. (applicant_details.residential_address_address_line_1) Example: ["34 King Str", "106 HQV", "77 Walking Street"]
     "holdingDetails.address.addressLines": {
         target: "holdingDetails_addressLines",
         type: ["array", null],
     },
+    // If account_type = INDIVIDUAL /JOINT: applicant_details.residential_address_postcode (1st applicant)
     "holdingDetails.address.postCode": {
         target: "applicant_details[index].residential_address_postcode",
         type: ["string", null],
     },
+    // If account_type = INDIVIDUAL / JOINT/ COMPANY/ TRUST_INDIVIDUAL/ SUPER_FUND_INDIVIDUAL: applicant_details.applicant_email (1st applicant)
     "holdingDetails.emailAddress": {
         target: "applicant_details[index].applicant_email",
         type: ["string", null],
@@ -340,35 +368,53 @@ const fieldMappings = {
 };
 
 // Xử lý dữ liệu Auseix
-const ausiexMapping = processAusiexData(auseixData, fieldMappings);
+const ausiexMapping = flattenObject(auseixData);
 // console.log(JSON.stringify(ausiexMapping, null, 2));
+
+const errorsType = applyTypeCheck(ausiexMapping, fieldMappings);
+if (errorsType.length > 0) { console.log(errorsType); }
+
 const key = "holdingDetails.address.addressLines";
-ausiexMapping[key] = ausiexMapping[key].join(", ").trim();
+ausiexMapping[key] = ausiexMapping[key].join(", ");
 
 // Xử lý dữ liệu Equix
 const equixMapping = processEquixData(equixData, fieldMappings);
 // console.log(JSON.stringify(equixMapping, null, 2));
 
 equixMapping[key] = equixMapping[key].join(", ").trim();
+// Duyệt qua tất cả các key trong equixMapping
+Object.keys(equixMapping).forEach(key => {
+    // Kiểm tra xem key có chứa "nonSupplyReasonCode" không
+    if (key.includes("nonSupplyReasonCode")) {
+        // Tìm key "isSupplied" tương ứng
+        const isSuppliedKey = key.replace("nonSupplyReasonCode", "isSupplied");
+
+        // Kiểm tra xem key "isSupplied" có tồn tại và có giá trị true không
+        if (equixMapping[isSuppliedKey] === true) {
+            // Nếu isSupplied là true, cập nhật nonSupplyReasonCode thành undefined
+            equixMapping[key] = undefined;
+        }
+    }
+});
 
 
 const columnNames1 = {
     fieldName: "Field Name",
-    compareValue: "Auseix Value",
-    expectedValue: "Equix Value",
+    compareValue: "Actual Value",
+    expectedValue: "Expected Value",
     matchResult: "Match Result",
 };
 
 const columnNames2 = {
     FieldName1: "Field Name",
-    Value1: "Auseix Value",
-    Value2: "Equix Value",
+    Value1: "Actual Value",
+    Value2: "Expected Value",
     MatchResult: "Match Result",
 };
 
 const resultTable = compareObjects(ausiexMapping, equixMapping, columnNames1);
 const { loggerTable } = require("../../logger/loggerTable");
-loggerTable(resultTable, columnNames2, [50, 50, 50, 10]);
+loggerTable(resultTable, columnNames2, [50, 50, 50, 20]);
 
 // Ghi kết quả vào file CSV
 const { Parser } = require("json2csv");

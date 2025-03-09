@@ -1,33 +1,36 @@
 {
-  "customerReferenceNumber": "EQ-EQ-275-051-608-R",
+  "customerReferenceNumber": "EQ-EQ-682-016-736-A",
   "status": "draft",
   "applicant": {
     "person": {
-      "title": "ms",
-      "firstName": "Huyen",
-      "middleName": "Khanh",
-      "lastName": "Tran",
+      "title": "mrs",
+      "firstName": "test",
+      "lastName": "test",
       "residentialAddress": {
-        "streetAddress": "1100/120 Street Name Avenue ",
-        "city": "ABBOTSFORD",
-        "region": { "code": "ACT" },
-        "postalCode": "1002",
+        "streetAddress": "231 Taafe Street",
+        "city": "JUGIONG",
+        "region": { "code": "NSW" },
+        "postalCode": "2726",
         "country": { "code": "AU" }
       },
       "postalAddress": {
-        "streetAddress": "1100/120 Street Name Avenue ",
-        "city": "ABBOTSFORD",
-        "region": { "code": "ACT" },
-        "postalCode": "1002",
+        "streetAddress": "231 Taafe Street",
+        "city": "JUGIONG",
+        "region": { "code": "NSW" },
+        "postalCode": "2726",
         "country": { "code": "AU" }
       },
       "emailAddresses": [
-        { "type": "work", "value": "huyen.tran@mail.com", "isPreferred": true }
+        {
+          "type": "work",
+          "value": "tuan.nguyen@novus-fintech.com",
+          "isPreferred": true
+        }
       ],
       "phoneNumbers": [
-        { "type": "mobile", "value": "61424234324", "isPreferred": true }
+        { "type": "mobile", "value": "61411111111", "isPreferred": true }
       ],
-      "dateOfBirth": "1997-11-16",
+      "dateOfBirth": "1987-12-12",
       "gender": "female",
       "nationalities": [{ "country": "AU", "type": "citizen" }]
     },
@@ -35,11 +38,11 @@
     "marketingOptedOut": false,
     "identityVerification": {
       "status": "verified",
-      "completionTimestamp": "2025-03-05T10:09:43.442Z"
+      "completionTimestamp": "2024-09-16T10:19:37.587Z"
     },
     "screeningResults": {
       "status": "verified",
-      "completionTimestamp": "2025-03-05T10:09:43.442Z"
+      "completionTimestamp": "2024-09-16T10:19:37.587Z"
     },
     "taxDetails": [
       {
@@ -48,6 +51,7 @@
         "nonSupplyReasonCode": "000000000"
       }
     ],
+    "isPrimaryApplicant": true,
     "entityType": "Individual"
   },
   "tradingProduct": {
@@ -58,12 +62,12 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-05T10:09:43.383Z"
+    "timestamp": "2024-09-16T10:19:37.568Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Huyen Khanh Tran",
+        "accountName": "Test Test",
         "branchCode": "182512",
         "accountNumber": "000123456789",
         "usedForCredits": true,
@@ -78,12 +82,9 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "12220",
-    "pid": "01027",
-    "address": {
-      "addressLines": ["1100/120 Street Name Avenue "],
-      "postCode": "1002"
-    },
-    "emailAddress": "huyen.tran@mail.com"
+    "hin": "567894123",
+    "pid": "06382",
+    "address": { "addressLines": ["5678 Elm St"], "postCode": "2001" },
+    "emailAddress": "info@bartell.com.au"
   }
 }

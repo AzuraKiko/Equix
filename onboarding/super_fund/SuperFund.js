@@ -40,17 +40,6 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU"
     },
-    "applicant.screeningResults": {
-        type: "object",
-    },
-    "applicant.screeningResults.status": {
-        type: "string",
-        defaultValue: "verified",
-    },
-    "applicant.screeningResults.completionTimestamp": {
-        target: "applicant_details[index].uploaded_documents[index].last_updated",
-        type: "string",
-    },
     "applicant.name": {
         target: "super_fund_name",
         type: "string",
@@ -60,10 +49,12 @@ const fieldMappings = {
     "applicant.type": {
         type: "string",
     },
+    // This field may not contain the words TRUST, TRUSTEE or ATF to prevent the account from being incorrectly flagged in AUSIEX systems. (<= 75 characters)
     "applicant.accountDesignation": {
         target: "account_designation",
         type: ["string", null],
     },
+    // Maximum 1 Email Address
     "applicant.emailAddresses": {
         type: "array",
     },
@@ -71,6 +62,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "work",
     },
+    // Get applicant_details.applicant_email of first applicant
     "applicant.emailAddresses[index].value": {
         target: "applicant_details[index].applicant_email",
         type: "string",
@@ -160,6 +152,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport"
     "applicant.trustees[index].identityVerification.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -171,6 +164,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport"
     "applicant.trustees[index].screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -185,12 +179,13 @@ const fieldMappings = {
     "applicant.trustees[index].person.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.trustees[index].person.firstName": {
         target: "applicant_details[index].first_name",
         type: "string",
     },
+    // if "applicant_details.middle_name" = "" => don't send to AusieX
     "applicant.trustees[index].person.middleName": {
         target: "applicant_details[index].middle_name",
         type: ["string", null],
@@ -265,6 +260,7 @@ const fieldMappings = {
         type: "string",
         enumMap: { ANDORRA: "AD", AUSTRALIA: "AU", BAHRAIN: "BH" },
     },
+    // Maximum 1 Email Address
     "applicant.trustees[index].person.emailAddresses": {
         type: "array",
     },
@@ -280,6 +276,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Maximum 4 Phone Numbers
     "applicant.trustees[index].person.phoneNumbers": {
         type: "array",
     },
@@ -295,6 +292,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Format: YYYY-MM-DD
     "applicant.trustees[index].person.dateOfBirth": {
         target: "applicant_details[index].dob",
         type: "string",
@@ -329,6 +327,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "Managers"
     },
+    // Maximum 4 Tax Details
     "applicant.trustees[index].taxDetails": {
         type: "array",
     },
@@ -336,6 +335,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
+    // If applicant_details.tfn has value -> applicant.trustees.taxDetails.isSupplied = TRUE. Else, applicant.trustees.taxDetails.isSupplied = FALSE
     "applicant.trustees[index].taxDetails[index].isSupplied": {
         type: "boolean",
     },
@@ -343,7 +343,7 @@ const fieldMappings = {
         target: "applicant_details[index].tfn",
         type: ["string", null],
     },
-    //if isSupplied = FALSE -> send this field with default value
+    // if isSupplied = FALSE -> send this field with default value
     "applicant.trustees[index].taxDetails[index].nonSupplyReasonCode": {
         type: ["string", null],
         defaultValue: "000000000",
@@ -352,7 +352,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: false,
     },
-    //Send information of first applicant
+    // Send information of first applicant
     "applicant.beneficiaryDetails": {
         type: "array",
     },
@@ -370,12 +370,13 @@ const fieldMappings = {
     "applicant.beneficiaryDetails[index].person.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.beneficiaryDetails[index].person.firstName": {
         target: "applicant_details[index].first_name",
         type: "string",
     },
+    // if "applicant_details.middle_name" = "" => don't send to AusieX
     "applicant.beneficiaryDetails[index].person.middleName": {
         target: "applicant_details[index].middle_name",
         type: ["string", null],
@@ -450,6 +451,7 @@ const fieldMappings = {
         type: "string",
         enumMap: { ANDORRA: "AD", AUSTRALIA: "AU", BAHRAIN: "BH" },
     },
+    // Maximum 1 Email Address
     "applicant.beneficiaryDetails[index].person.emailAddresses": {
         type: "array",
     },
@@ -465,6 +467,7 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: true,
     },
+    // Maximum 4 Phone Numbers
     "applicant.beneficiaryDetails[index].person.phoneNumbers": {
         type: "array",
     },
@@ -514,6 +517,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "Managers"
     },
+    // Maximum 4 Tax Details
     "applicant.beneficiaryDetails[index].taxDetails": {
         type: "array",
     },
@@ -521,6 +525,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
+    // '- If applicant_details.tfn has value -> applicant.beneficiaryDetails.taxDetails.isSupplied = TRUE. Else, applicant.beneficiaryDetails.taxDetails.isSupplied = FALSE
     "applicant.beneficiaryDetails[index].taxDetails[index].isSupplied": {
         type: "boolean",
     },
@@ -544,6 +549,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport"
     "applicant.beneficiaryDetails[index].screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
@@ -559,13 +565,14 @@ const fieldMappings = {
         type: "boolean",
         defaultValue: false,
     },
+    // Ausiex only support Individual settlor, please only select Individual settlor for testing
     "applicant.settlor.name": {
         type: "object",
     },
     "applicant.settlor.name.title": {
         target: "applicant_details[index].title",
         type: "string",
-        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss" },
+        enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.settlor.name.firstName": {
         target: "individual_settlor.settlor_first_name",
@@ -579,6 +586,7 @@ const fieldMappings = {
         target: "individual_settlor.settlor_last_name",
         type: "string",
     },
+    // Maximum 4 Tax Details
     "applicant.taxDetails": {
         type: "array",
     },
@@ -586,6 +594,7 @@ const fieldMappings = {
         type: "string",
         defaultValue: "AU",
     },
+    // If super_fund_tfn has value -> applicant.taxDetails.isSupplied = TRUE. Else, applicant.taxDetails.isSupplied = FALSE (Updat logic)
     "applicant.taxDetails[index].isSupplied": {
         type: "boolean",
     },
@@ -593,7 +602,7 @@ const fieldMappings = {
         target: "super_fund_tfn",
         type: ["string", null],
     },
-    //if isSupplied = FALSE -> send this field with default value
+    // if isSupplied = FALSE -> send this field with default value
     "applicant.taxDetails[index].nonSupplyReasonCode": {
         type: ["string", null],
         defaultValue: "000000000",
@@ -605,7 +614,20 @@ const fieldMappings = {
         type: "string",
         defaultValue: "verified",
     },
+    // Get last_updated of document_file_name starting with "passKYCReport" of the first applicant
     "applicant.identityVerification.completionTimestamp": {
+        target: "applicant_details[index].uploaded_documents[index].last_updated",
+        type: "string",
+    },
+    "applicant.screeningResults": {
+        type: "object",
+    },
+    "applicant.screeningResults.status": {
+        type: "string",
+        defaultValue: "verified",
+    },
+    // Get last_updated of document_file_name starting with "passKYCReport" of the first applicant
+    "applicant.screeningResults.completionTimestamp": {
         target: "applicant_details[index].uploaded_documents[index].last_updated",
         type: "string",
     },
@@ -641,14 +663,17 @@ const fieldMappings = {
     "settlement.details": {
         type: "array",
     },
+    // Names must contain only letters, numbers, spaces, apostrophes, and hyphens.
     "settlement.details[index].accountName": {
         target: "bank_account_name",
         type: "string",
     },
+    // The field must only contain numeric characters
     "settlement.details[index].branchCode": {
         target: "bank_bsb",
         type: "string",
     },
+    // The field must only contain numeric characters
     "settlement.details[index].accountNumber": {
         target: "bank_account_number",
         type: "string",
@@ -673,8 +698,10 @@ const fieldMappings = {
         type: "string",
         defaultValue: "net",
     },
+    // Update value settlement.holdFunds, required
     "settlement.holdFunds": {
-        type: ["boolean", null],
+        type: ["boolean"],
+        defaultValue: false,
     },
     "settlement.redirectDividends": {
         type: ["boolean", null],
@@ -688,6 +715,7 @@ const fieldMappings = {
         defaultValue: "uatsentadv152",
         type: ["string", null],
     },
+    // If application is created from onboarding, default tradeable_products.equity = BBJ
     "adviser.brokerageCode": {
         type: ["string", null],
         target: "tradeable_products.equity"
@@ -721,14 +749,17 @@ const fieldMappings = {
     "holdingDetails.address": {
         type: ["object", null],
     },
+    // Get information from all applicants (applicant_details.residential_address_address_line_1). Example: ["34 King Str", "106 HQV", "77 Walking Street"]
     "holdingDetails.address.addressLines": {
         target: "holdingDetails_addressLines",
         type: ["array", null],
     },
+    // If account_type = TRUST_COMPANY/ SUPER_FUND_COMPANY/ TRUST_INDIVIDUAL/ SUPER_FUND_INDIVIDUAL: mailing_address_postcode
     "holdingDetails.address.postCode": {
         target: "mailing_address_postcode",
         type: ["string", null],
     },
+    // If account_type = INDIVIDUAL / JOINT/ COMPANY/ TRUST_INDIVIDUAL/ SUPER_FUND_INDIVIDUAL: applicant_details.applicant_email (1st applicant)
     "holdingDetails.emailAddress": {
         target: "applicant_details[index].applicant_email",
         type: ["string", null],
@@ -743,11 +774,15 @@ const errorsType = applyTypeCheck(ausiexMapping, fieldMappings);
 if (errorsType.length > 0) { console.log(errorsType); }
 
 const key = "holdingDetails.address.addressLines";
-ausiexMapping[key] = ausiexMapping[key].join(", ");
+ausiexMapping[key] = ausiexMapping[key]
+    .map(str => str.trim())
+    .join(", ");
 // Xử lý dữ liệu Equix
 const equixMapping = processEquixData(equixData, fieldMappings);
 // console.log(JSON.stringify(equixMapping, null, 2));
-equixMapping[key] = equixMapping[key].join(", ");
+equixMapping[key] = equixMapping[key]
+    .map(str => str.trim()) // Trim khoảng trắng của từng phần tử
+    .join(", ");
 const key2 = "holdingDetails.hin";
 equixMapping[key2] = equixMapping[key2] !== null ? String(equixMapping[key2]) : equixMapping[key2];
 
@@ -766,17 +801,31 @@ Object.keys(equixMapping).forEach(key => {
     }
 });
 
+// Duyệt qua tất cả các key trong equixMapping
+Object.keys(equixMapping).forEach(key => {
+    if (key.includes("streetAddress")) {
+        equixMapping[key] = equixMapping[key].trim();
+    }
+});
+
+// Duyệt qua tất cả các key trong ausiexMapping
+Object.keys(ausiexMapping).forEach(key => {
+    if (key.includes("streetAddress")) {
+        ausiexMapping[key] = ausiexMapping[key].trim();
+    }
+});
+
 const columnNames1 = {
     fieldName: "Field Name",
-    compareValue: "Auseix Value",
-    expectedValue: "Equix Value",
+    compareValue: "Actual Value",
+    expectedValue: "Expected Value",
     matchResult: "Match Result",
 };
 
 const columnNames2 = {
     FieldName1: "Field Name",
-    Value1: "Auseix Value",
-    Value2: "Equix Value",
+    Value1: "Actual Value",
+    Value2: "Expected Value",
     MatchResult: "Match Result",
 };
 

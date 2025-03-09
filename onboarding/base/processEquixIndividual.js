@@ -54,17 +54,17 @@ const processEquixData = (data, mappings) => {
 
         // Xử lý logic đặc biệt cho `applicant.taxDetails[index].isSupplied`
         if (key.includes("applicant.taxDetails[index].isSupplied")) {
-            const superFundTfn = getValueArray(data, "super_fund_tfn");
+            const superFundTfn = getValueFromTarget("applicant_details[index].tfn", 0);
             value = superFundTfn !== null && superFundTfn !== undefined;
         } else if (key.includes("hin")) {
             const hin = getValueArray(data, "settlement_existing_hin");
-            value = hin ? String(hin) : undefined;
+            value = hin !== null && hin !== undefined ? String(hin) : hin;
         } else if (key.includes("branchCode")) {
             const branchCode = getValueArray(data, "bank_bsb");
-            value = branchCode ? branchCode.replace(/\D/g, "") : undefined;
+            value = branchCode ? branchCode.replace(/\D/g, "") : branchCode;
         } else if (key.includes("accountName")) {
             const accountName = getValueArray(data, "bank_account_name");
-            value = accountName ? accountName.replace(/[^a-zA-Z0-9 '-]/g, "-") : undefined;
+            value = accountName ? accountName.replace(/[^a-zA-Z0-9 '-]/g, "-") : accountName;
         }
         else if (target) {
             if (target.includes("last_updated")) {
@@ -80,15 +80,6 @@ const processEquixData = (data, mappings) => {
 
         if (value === undefined && mapping.defaultValue !== undefined) {
             value = mapping.defaultValue;
-        }
-
-        if (key.includes("nonSupplyReasonCode")) {
-            const tfn = getValueArray(data, "super_fund_tfn");
-            if (tfn !== null && tfn !== undefined) {
-                value = undefined;
-            } else {
-                value = mapping.defaultValue;
-            }
         }
 
         if (value !== undefined) {

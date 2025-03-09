@@ -1,68 +1,66 @@
 {
-  "customerReferenceNumber": "EQ-EQ-640-922-491-R",
+  "customerReferenceNumber": "EQ-EQ-343-967-123-R",
   "status": "draft",
   "applicant": {
     "entityType": "Trust",
-    "name": "trust me bro",
-    "type": "family",
-    "accountDesignation": "DUC PHAM DEP TRAI",
+    "name": "Novus Fintech",
+    "type": "other",
+    "accountDesignation": "0223344555",
     "emailAddresses": [
-      {
-        "type": "work",
-        "value": "duc.pham+1023@equix.com.au",
-        "isPreferred": true
-      }
+      { "type": "work", "value": "huyen.tran@gmail.com", "isPreferred": true }
     ],
     "establishmentLocation": "AU",
+    "abn": "21623914910",
     "governedByTrustDeed": true,
     "marketingOptedOut": false,
     "industryClassification": { "categoryCode": "A", "typeCode": "01" },
     "registeredAddress": {
-      "streetAddress": "2 Uytdehaag Court",
-      "city": "HORSHAM",
-      "region": { "code": "VIC" },
-      "postalCode": "3400",
+      "streetAddress": "44555/77A Rundle ROAD ",
+      "city": "SALISBURY SOUTH",
+      "region": { "code": "SA" },
+      "postalCode": "5106",
       "country": { "code": "AU" }
     },
     "postalAddress": {
-      "streetAddress": "2 Uytdehaag Court",
-      "city": "HORSHAM",
+      "streetAddress": "676R Gilbert Road",
+      "city": "RESERVOIR",
       "region": { "code": "VIC" },
-      "postalCode": "3400",
+      "postalCode": "3073",
       "country": { "code": "AU" }
     },
     "trustees": [
       {
         "person": {
-          "title": "mr",
-          "firstName": "duc",
-          "lastName": "pham",
+          "title": "ms",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "97 Tucki Road",
-            "city": "TUCKI TUCKI",
-            "region": { "code": "NSW" },
-            "postalCode": "2480",
+            "streetAddress": "10009/234 Ho Tung Mau ALLEY ",
+            "city": "24234",
+            "region": { "code": "ACT" },
+            "postalCode": "1000",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "97 Tucki Road",
-            "city": "TUCKI TUCKI",
-            "region": { "code": "NSW" },
-            "postalCode": "2480",
+            "streetAddress": "6000/41 Bradley STREET ",
+            "city": "DAYBORO",
+            "region": { "code": "QLD" },
+            "postalCode": "4521",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "duc.pham+1023@equix.com.au",
+              "value": "huyen.tran@gmail.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61418262198", "isPreferred": true }
+            { "type": "mobile", "value": "61424234234", "isPreferred": true }
           ],
-          "dateOfBirth": "1999-11-19",
-          "gender": "male",
+          "dateOfBirth": "2002-09-10",
+          "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
         "role": "DIRECTOR",
@@ -74,11 +72,70 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "isPrimaryApplicant": true,
+        "entityType": "Individual"
+      },
+      {
+        "person": {
+          "title": "miss",
+          "firstName": "Quynh",
+          "middleName": "Diem",
+          "lastName": "Bui",
+          "residentialAddress": {
+            "streetAddress": "676R Gilbert Road",
+            "city": "RESERVOIR",
+            "region": { "code": "VIC" },
+            "postalCode": "3073",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "676R Gilbert Road",
+            "city": "RESERVOIR",
+            "region": { "code": "VIC" },
+            "postalCode": "3073",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "quynh.bui@gmail.com",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61435345345", "isPreferred": true }
+          ],
+          "dateOfBirth": "2001-09-15",
+          "gender": "other",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "role": "DIRECTOR",
+        "isCompanyBeneficialOwner": false,
+        "isTrustBeneficialOwner": true,
+        "isTrustBeneficiary": true,
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
         },
         "taxDetails": [
           {
@@ -93,35 +150,36 @@
     "beneficiaryDetails": [
       {
         "person": {
-          "title": "mr",
-          "firstName": "duc",
-          "lastName": "pham",
+          "title": "ms",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "97 Tucki Road",
-            "city": "TUCKI TUCKI",
-            "region": { "code": "NSW" },
-            "postalCode": "2480",
+            "streetAddress": "10009/234 Ho Tung Mau ALLEY ",
+            "city": "24234",
+            "region": { "code": "ACT" },
+            "postalCode": "1000",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "97 Tucki Road",
-            "city": "TUCKI TUCKI",
-            "region": { "code": "NSW" },
-            "postalCode": "2480",
+            "streetAddress": "6000/41 Bradley STREET ",
+            "city": "DAYBORO",
+            "region": { "code": "QLD" },
+            "postalCode": "4521",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "duc.pham+1023@equix.com.au",
+              "value": "huyen.tran@gmail.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61418262198", "isPreferred": true }
+            { "type": "mobile", "value": "61424234234", "isPreferred": true }
           ],
-          "dateOfBirth": "1999-11-19",
-          "gender": "male",
+          "dateOfBirth": "2002-09-10",
+          "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
         "role": "DIRECTOR",
@@ -131,11 +189,69 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-05T10:20:31.325Z"
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "isPrimaryApplicant": true,
+        "entityType": "trust-beneficiary-individual",
+        "isBeneficialOwner": true
+      },
+      {
+        "person": {
+          "title": "miss",
+          "firstName": "Quynh",
+          "middleName": "Diem",
+          "lastName": "Bui",
+          "residentialAddress": {
+            "streetAddress": "676R Gilbert Road",
+            "city": "RESERVOIR",
+            "region": { "code": "VIC" },
+            "postalCode": "3073",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "676R Gilbert Road",
+            "city": "RESERVOIR",
+            "region": { "code": "VIC" },
+            "postalCode": "3073",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "quynh.bui@gmail.com",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61435345345", "isPreferred": true }
+          ],
+          "dateOfBirth": "2001-09-15",
+          "gender": "other",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "role": "DIRECTOR",
+        "isCompanyBeneficialOwner": false,
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-07T06:44:40.564Z"
         },
         "taxDetails": [
           {
@@ -150,12 +266,29 @@
     ],
     "identityVerification": {
       "status": "verified",
-      "completionTimestamp": "2025-03-05T10:20:31.325Z"
+      "completionTimestamp": "2025-03-07T06:44:40.564Z"
     },
     "screeningResults": {
       "status": "verified",
-      "completionTimestamp": "2025-03-05T10:20:31.325Z"
-    }
+      "completionTimestamp": "2025-03-07T06:44:40.564Z"
+    },
+    "settlor": {
+      "isDeceased": false,
+      "name": {
+        "title": "mr",
+        "firstName": "Duc",
+        "middleName": "Van",
+        "lastName": "Pham"
+      },
+      "assetContributionIsImmaterial": false
+    },
+    "taxDetails": [
+      {
+        "country": "AU",
+        "isSupplied": true,
+        "taxIdentificationNumber": "170219941"
+      }
+    ]
   },
   "tradingProduct": {
     "type": "domestic-equities",
@@ -165,12 +298,12 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-05T10:20:09.716Z"
+    "timestamp": "2025-03-07T06:42:19.977Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Duc Pham",
+        "accountName": "Huyen Khanh Tran - Duc Van Pham - Quynh Diem Bui",
         "branchCode": "182512",
         "accountNumber": "000123456789",
         "usedForCredits": true,
@@ -181,13 +314,20 @@
     ],
     "nettingPolicy": "net",
     "holdFunds": false,
-    "redirectDividends": false
+    "redirectDividends": true
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "6921837421",
-    "pid": "01027",
-    "address": { "addressLines": ["97 Tucki Road"], "postCode": "2480" },
-    "emailAddress": "duc.pham+1023@equix.com.au"
+    "hin": "2423423",
+    "pid": "01042",
+    "address": {
+      "addressLines": [
+        "10009/234 Ho Tung Mau ALLEY ",
+        "88888/43 Sword STREET ",
+        "676R Gilbert Road"
+      ],
+      "postCode": "3073"
+    },
+    "emailAddress": "huyen.tran@gmail.com"
   }
 }
