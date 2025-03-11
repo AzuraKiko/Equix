@@ -2,194 +2,344 @@
   "customerReferenceNumber": "EQ-EQ-722-509-267-A",
   "status": "draft",
   "applicant": {
-    "entityType": "Trust",
-    "name": "Grooo Internal",
-    "type": "self-managed-super-fund",
-    "accountDesignation": "0345453",
-    "emailAddresses": [
-      { "type": "work", "value": "huyen.tran@yahoo.com", "isPreferred": true }
-    ],
-    "establishmentLocation": "AU",
-    "governedByTrustDeed": true,
-    "marketingOptedOut": false,
-    "industryClassification": { "categoryCode": "A", "typeCode": "01" },
-    "registeredAddress": {
-      "streetAddress": "1204/12 Executive DRIVE ",
-      "city": "BURLEIGH WATERS",
-      "region": { "code": "QLD" },
-      "postalCode": "4220",
-      "country": { "code": "AU" }
-    },
-    "postalAddress": {
-      "streetAddress": "65 Caro Road",
-      "city": "CATABY",
-      "region": { "code": "WA" },
-      "postalCode": "6507",
-      "country": { "code": "AU" }
-    },
-    "trustees": [
-      {
-        "person": {
-          "title": "miss",
-          "firstName": "Huyen",
-          "middleName": "Khanh",
-          "lastName": "Tran",
-          "residentialAddress": {
-            "streetAddress": "6789/98A Blight STREET ",
-            "city": "RENOWN PARK",
-            "region": { "code": "SA" },
-            "postalCode": "5008",
-            "country": { "code": "AU" }
-          },
-          "postalAddress": {
-            "streetAddress": "6789/98A Blight STREET ",
-            "city": "RENOWN PARK",
-            "region": { "code": "SA" },
-            "postalCode": "5008",
-            "country": { "code": "AU" }
-          },
-          "emailAddresses": [
-            {
+      "entityType": "Trust",
+      "name": "Grooo Internal",
+      "type": "self-managed-super-fund",
+      "accountDesignation": "0345453",
+      "emailAddresses": [
+          {
               "type": "work",
               "value": "huyen.tran@yahoo.com",
               "isPreferred": true
-            }
-          ],
-          "phoneNumbers": [
-            { "type": "mobile", "value": "61423423889", "isPreferred": true }
-          ],
-          "dateOfBirth": "1998-07-19",
-          "gender": "female",
-          "nationalities": [{ "country": "AU", "type": "citizen" }]
-        },
-        "isSignatory": true,
-        "employment": { "category": "Managers", "type": "ICT Managers" },
-        "marketingOptedOut": false,
-        "identityVerification": {
-          "status": "verified",
-          "completionTimestamp": "2025-03-07T06:55:01.734Z"
-        },
-        "screeningResults": {
-          "status": "verified",
-          "completionTimestamp": "2025-03-07T06:55:01.734Z"
-        },
-        "taxDetails": [
-          {
-            "country": "AU",
-            "isSupplied": false,
-            "nonSupplyReasonCode": "000000000"
           }
-        ],
-        "isPrimaryApplicant": true,
-        "entityType": "Individual"
-      }
-    ],
-    "beneficiaryDetails": [
-      {
-        "person": {
-          "title": "miss",
-          "firstName": "Huyen",
-          "middleName": "Khanh",
-          "lastName": "Tran",
-          "residentialAddress": {
-            "streetAddress": "6789/98A Blight STREET ",
-            "city": "RENOWN PARK",
-            "region": { "code": "SA" },
-            "postalCode": "5008",
-            "country": { "code": "AU" }
-          },
-          "postalAddress": {
-            "streetAddress": "6789/98A Blight STREET ",
-            "city": "RENOWN PARK",
-            "region": { "code": "SA" },
-            "postalCode": "5008",
-            "country": { "code": "AU" }
-          },
-          "emailAddresses": [
-            {
-              "type": "work",
-              "value": "huyen.tran@yahoo.com",
-              "isPreferred": true
-            }
-          ],
-          "phoneNumbers": [
-            { "type": "mobile", "value": "61423423889", "isPreferred": true }
-          ],
-          "dateOfBirth": "1998-07-19",
-          "gender": "female",
-          "nationalities": [{ "country": "AU", "type": "citizen" }]
-        },
-        "isSignatory": true,
-        "employment": { "category": "Managers", "type": "ICT Managers" },
-        "marketingOptedOut": false,
-        "identityVerification": {
-          "status": "verified",
-          "completionTimestamp": "2025-03-07T06:55:01.734Z"
-        },
-        "screeningResults": {
-          "status": "verified",
-          "completionTimestamp": "2025-03-07T06:55:01.734Z"
-        },
-        "taxDetails": [
+      ],
+      "establishmentLocation": "AU",
+      "governedByTrustDeed": true,
+      "marketingOptedOut": false,
+      "industryClassification": { "categoryCode": "A", "typeCode": "01" },
+      "registeredAddress": {
+          "streetAddress": "1204/12 Executive DRIVE ",
+          "city": "BURLEIGH WATERS",
+          "region": { "code": "QLD" },
+          "postalCode": "4220",
+          "country": { "code": "AU" }
+      },
+      "postalAddress": {
+          "streetAddress": "65 Caro Road",
+          "city": "CATABY",
+          "region": { "code": "WA" },
+          "postalCode": "6507",
+          "country": { "code": "AU" }
+      },
+      "trustees": [
           {
-            "country": "AU",
-            "isSupplied": false,
-            "nonSupplyReasonCode": "000000000"
+              "person": {
+                  "title": "miss",
+                  "firstName": "Huyen",
+                  "middleName": "Khanh",
+                  "lastName": "Tran",
+                  "residentialAddress": {
+                      "streetAddress": "6789/98A Blight STREET ",
+                      "city": "RENOWN PARK",
+                      "region": { "code": "SA" },
+                      "postalCode": "5008",
+                      "country": { "code": "AU" }
+                  },
+                  "postalAddress": {
+                      "streetAddress": "6789/98A Blight STREET ",
+                      "city": "RENOWN PARK",
+                      "region": { "code": "SA" },
+                      "postalCode": "5008",
+                      "country": { "code": "AU" }
+                  },
+                  "emailAddresses": [
+                      {
+                          "type": "work",
+                          "value": "huyen.tran@yahoo.com",
+                          "isPreferred": true
+                      }
+                  ],
+                  "phoneNumbers": [
+                      {
+                          "type": "mobile",
+                          "value": "61423423889",
+                          "isPreferred": true
+                      }
+                  ],
+                  "dateOfBirth": "1998-07-19",
+                  "gender": "female",
+                  "nationalities": [{ "country": "AU", "type": "citizen" }]
+              },
+              "isSignatory": true,
+              "employment": {
+                  "category": "Managers",
+                  "type": "ICT Managers"
+              },
+              "marketingOptedOut": false,
+              "identityVerification": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "screeningResults": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "taxDetails": [
+                  {
+                      "country": "AU",
+                      "isSupplied": false,
+                      "nonSupplyReasonCode": "000000000"
+                  }
+              ],
+              "isPrimaryApplicant": true,
+              "entityType": "Individual"
+          },
+          {
+              "person": {
+                  "title": "mr",
+                  "firstName": "Duc",
+                  "middleName": "Van",
+                  "lastName": "Pham",
+                  "residentialAddress": {
+                      "streetAddress": "34 Lloyd Street",
+                      "city": "DIMBOOLA",
+                      "region": { "code": "VIC" },
+                      "postalCode": "3414",
+                      "country": { "code": "AU" }
+                  },
+                  "postalAddress": {
+                      "streetAddress": "34 Lloyd Street",
+                      "city": "DIMBOOLA",
+                      "region": { "code": "VIC" },
+                      "postalCode": "3414",
+                      "country": { "code": "AU" }
+                  },
+                  "emailAddresses": [
+                      {
+                          "type": "work",
+                          "value": "duc.pham@yahoo.com",
+                          "isPreferred": true
+                      }
+                  ],
+                  "phoneNumbers": [
+                      {
+                          "type": "mobile",
+                          "value": "61424234234",
+                          "isPreferred": true
+                      }
+                  ],
+                  "dateOfBirth": "1997-09-10",
+                  "gender": "male",
+                  "nationalities": [{ "country": "AU", "type": "citizen" }]
+              },
+              "isSignatory": true,
+              "employment": {
+                  "category": "Managers",
+                  "type": "ICT Managers"
+              },
+              "marketingOptedOut": false,
+              "identityVerification": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "screeningResults": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "taxDetails": [
+                  {
+                      "country": "AU",
+                      "isSupplied": false,
+                      "nonSupplyReasonCode": "000000000"
+                  }
+              ],
+              "entityType": "Individual"
+          },
+          {
+              "person": {
+                  "title": "miss",
+                  "firstName": "Van",
+                  "middleName": "Anh",
+                  "lastName": "Nguyen",
+                  "residentialAddress": {
+                      "streetAddress": "65 Caro Road",
+                      "city": "CATABY",
+                      "region": { "code": "WA" },
+                      "postalCode": "6507",
+                      "country": { "code": "AU" }
+                  },
+                  "postalAddress": {
+                      "streetAddress": "65 Caro Road",
+                      "city": "CATABY",
+                      "region": { "code": "WA" },
+                      "postalCode": "6507",
+                      "country": { "code": "AU" }
+                  },
+                  "emailAddresses": [
+                      {
+                          "type": "work",
+                          "value": "van.anh@yahoo.com",
+                          "isPreferred": true
+                      }
+                  ],
+                  "phoneNumbers": [
+                      {
+                          "type": "mobile",
+                          "value": "61424233242",
+                          "isPreferred": true
+                      }
+                  ],
+                  "dateOfBirth": "1996-10-12",
+                  "gender": "other",
+                  "nationalities": [{ "country": "AU", "type": "citizen" }]
+              },
+              "isSignatory": true,
+              "employment": {
+                  "category": "Managers",
+                  "type": "ICT Managers"
+              },
+              "marketingOptedOut": false,
+              "identityVerification": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "screeningResults": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "taxDetails": [
+                  {
+                      "country": "AU",
+                      "isSupplied": false,
+                      "nonSupplyReasonCode": "000000000"
+                  }
+              ],
+              "entityType": "Individual"
           }
-        ],
-        "isPrimaryApplicant": true,
-        "entityType": "trust-beneficiary-individual",
-        "isBeneficialOwner": false
-      }
-    ],
-    "identityVerification": {
-      "status": "verified",
-      "completionTimestamp": "2025-03-07T06:55:01.734Z"
-    },
-    "screeningResults": {
-      "status": "verified",
-      "completionTimestamp": "2025-03-07T06:55:01.734Z"
-    },
-    "settlor": { "isDeceased": false, "assetContributionIsImmaterial": true }
+      ],
+      "beneficiaryDetails": [
+          {
+              "person": {
+                  "title": "miss",
+                  "firstName": "Huyen",
+                  "middleName": "Khanh",
+                  "lastName": "Tran",
+                  "residentialAddress": {
+                      "streetAddress": "6789/98A Blight STREET ",
+                      "city": "RENOWN PARK",
+                      "region": { "code": "SA" },
+                      "postalCode": "5008",
+                      "country": { "code": "AU" }
+                  },
+                  "postalAddress": {
+                      "streetAddress": "6789/98A Blight STREET ",
+                      "city": "RENOWN PARK",
+                      "region": { "code": "SA" },
+                      "postalCode": "5008",
+                      "country": { "code": "AU" }
+                  },
+                  "emailAddresses": [
+                      {
+                          "type": "work",
+                          "value": "huyen.tran@yahoo.com",
+                          "isPreferred": true
+                      }
+                  ],
+                  "phoneNumbers": [
+                      {
+                          "type": "mobile",
+                          "value": "61423423889",
+                          "isPreferred": true
+                      }
+                  ],
+                  "dateOfBirth": "1998-07-19",
+                  "gender": "female",
+                  "nationalities": [{ "country": "AU", "type": "citizen" }]
+              },
+              "isSignatory": true,
+              "employment": {
+                  "category": "Managers",
+                  "type": "ICT Managers"
+              },
+              "marketingOptedOut": false,
+              "identityVerification": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "screeningResults": {
+                  "status": "verified",
+                  "completionTimestamp": "2025-03-07T06:55:01.734Z"
+              },
+              "taxDetails": [
+                  {
+                      "country": "AU",
+                      "isSupplied": false,
+                      "nonSupplyReasonCode": "000000000"
+                  }
+              ],
+              "isPrimaryApplicant": true,
+              "entityType": "trust-beneficiary-individual",
+              "isBeneficialOwner": false
+          }
+      ],
+      "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-07T06:55:01.734Z"
+      },
+      "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-07T06:55:01.734Z"
+      },
+      "settlor": {
+          "isDeceased": false,
+          "assetContributionIsImmaterial": true
+      },
+      "taxDetails": [
+          {
+              "country": "AU",
+              "isSupplied": true,
+              "taxIdentificationNumber": "170219941"
+          }
+      ]
   },
   "tradingProduct": {
-    "type": "domestic-equities",
-    "canTradeWarrants": true,
-    "contractNote": { "type": "digital", "generationType": "day" }
+      "type": "domestic-equities",
+      "canTradeWarrants": true,
+      "contractNote": { "type": "digital", "generationType": "day" }
   },
   "termsAndConditions": {
-    "accepted": true,
-    "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-07T06:53:44.086Z"
+      "accepted": true,
+      "methodOfAcceptance": "digital",
+      "timestamp": "2025-03-07T06:53:44.086Z"
   },
   "settlement": {
-    "details": [
-      {
-        "accountName": "Huyen Khanh Tran - Duc Van Pham - Van Anh Nguyen",
-        "branchCode": "182512",
-        "accountNumber": "000123456789",
-        "usedForCredits": true,
-        "usedForDebits": true,
-        "usedForDividends": true,
-        "type": "Direct_Entry_Account"
-      }
-    ],
-    "nettingPolicy": "net",
-    "holdFunds": false,
-    "redirectDividends": true
+      "details": [
+          {
+              "accountName": "Huyen Khanh Tran - Duc Van Pham - Van Anh Nguyen",
+              "branchCode": "182512",
+              "accountNumber": "000123456789",
+              "usedForCredits": true,
+              "usedForDebits": true,
+              "usedForDividends": true,
+              "type": "Direct_Entry_Account"
+          }
+      ],
+      "nettingPolicy": "net",
+      "holdFunds": false,
+      "redirectDividends": true
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "24234",
-    "pid": "01042",
-    "address": {
-      "addressLines": [
-        "6789/98A Blight STREET ",
-        "34 Lloyd Street",
-        "65 Caro Road"
-      ],
-      "postCode": "6507"
-    },
-    "emailAddress": "huyen.tran@yahoo.com"
+      "hin": "24234",
+      "pid": "01042",
+      "address": {
+          "addressLines": [
+              "6789/98A Blight STREET ",
+              "34 Lloyd Street",
+              "65 Caro Road"
+          ],
+          "postCode": "6507"
+      },
+      "emailAddress": "huyen.tran@yahoo.com"
   }
 }

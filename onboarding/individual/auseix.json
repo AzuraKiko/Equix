@@ -1,48 +1,48 @@
 {
-  "customerReferenceNumber": "EQ-EQ-682-016-736-A",
+  "customerReferenceNumber": "EQ-EQ-804-552-489-R",
   "status": "draft",
   "applicant": {
     "person": {
-      "title": "mrs",
-      "firstName": "test",
-      "lastName": "test",
+      "title": "mr",
+      "firstName": "Duc",
+      "lastName": "Pham",
       "residentialAddress": {
-        "streetAddress": "231 Taafe Street",
-        "city": "JUGIONG",
-        "region": { "code": "NSW" },
-        "postalCode": "2726",
+        "streetAddress": "60 Saint Aubyns Road",
+        "city": "ST AUBYN",
+        "region": { "code": "QLD" },
+        "postalCode": "4352",
         "country": { "code": "AU" }
       },
       "postalAddress": {
-        "streetAddress": "231 Taafe Street",
-        "city": "JUGIONG",
-        "region": { "code": "NSW" },
-        "postalCode": "2726",
+        "streetAddress": "60 Saint Aubyns Road",
+        "city": "ST AUBYN",
+        "region": { "code": "QLD" },
+        "postalCode": "4352",
         "country": { "code": "AU" }
       },
       "emailAddresses": [
         {
           "type": "work",
-          "value": "tuan.nguyen@novus-fintech.com",
+          "value": "duc.pham+1302@equix.com.au",
           "isPreferred": true
         }
       ],
       "phoneNumbers": [
-        { "type": "mobile", "value": "61411111111", "isPreferred": true }
+        { "type": "mobile", "value": "61412394862", "isPreferred": true }
       ],
-      "dateOfBirth": "1987-12-12",
-      "gender": "female",
+      "dateOfBirth": "1999-11-19",
+      "gender": "male",
       "nationalities": [{ "country": "AU", "type": "citizen" }]
     },
     "employment": { "category": "Managers", "type": "ICT Managers" },
     "marketingOptedOut": false,
     "identityVerification": {
       "status": "verified",
-      "completionTimestamp": "2024-09-16T10:19:37.587Z"
+      "completionTimestamp": "2025-03-10T10:26:07.254Z"
     },
     "screeningResults": {
       "status": "verified",
-      "completionTimestamp": "2024-09-16T10:19:37.587Z"
+      "completionTimestamp": "2025-03-10T10:26:07.254Z"
     },
     "taxDetails": [
       {
@@ -62,12 +62,12 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2024-09-16T10:19:37.568Z"
+    "timestamp": "2025-03-10T10:26:07.196Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Test Test",
+        "accountName": "Duc Pham",
         "branchCode": "182512",
         "accountNumber": "000123456789",
         "usedForCredits": true,
@@ -82,9 +82,9 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "567894123",
-    "pid": "06382",
-    "address": { "addressLines": ["5678 Elm St"], "postCode": "2001" },
-    "emailAddress": "info@bartell.com.au"
+    "hin": "2397864923",
+    "pid": "01042",
+    "address": { "addressLines": ["60 Saint Aubyns Road"], "postCode": "4352" },
+    "emailAddress": "duc.pham+1302@equix.com.au"
   }
 }

@@ -375,7 +375,9 @@ const errorsType = applyTypeCheck(ausiexMapping, fieldMappings);
 if (errorsType.length > 0) { console.log(errorsType); }
 
 const key = "holdingDetails.address.addressLines";
-ausiexMapping[key] = ausiexMapping[key].join(", ");
+ausiexMapping[key] = ausiexMapping[key]
+    .map(str => str.trim())
+    .join(", ");
 
 // Xử lý dữ liệu Equix
 const equixMapping = processEquixData(equixData, fieldMappings);

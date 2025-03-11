@@ -1,35 +1,39 @@
 {
-  "customerReferenceNumber": "EQ-EQ-480-772-651-R",
+  "customerReferenceNumber": "EQ-EQ-154-246-146-R",
   "status": "draft",
   "applicant": {
     "parties": [
       {
         "person": {
-          "title": "ms",
-          "firstName": "Mama",
-          "middleName": "Meme",
-          "lastName": "Leno",
+          "title": "mr",
+          "firstName": "Hester",
+          "middleName": "Grace",
+          "lastName": "Auer",
           "residentialAddress": {
-            "streetAddress": "29 Ada Street",
-            "city": "ADELAIDE",
-            "region": { "code": "SA" },
-            "postalCode": "5000",
+            "streetAddress": "390 Hampton Street ",
+            "city": "HAMPTON",
+            "region": { "code": "VIC" },
+            "postalCode": "3188",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "29 Ada Street",
-            "city": "ADELAIDE",
-            "region": { "code": "SA" },
-            "postalCode": "5000",
+            "streetAddress": "390 Hampton Street ",
+            "city": "HAMPTON",
+            "region": { "code": "VIC" },
+            "postalCode": "3188",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
-            { "type": "work", "value": "user24@gmail.com", "isPreferred": true }
+            {
+              "type": "work",
+              "value": "Hershel49@yahoo.com",
+              "isPreferred": true
+            }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61424234324", "isPreferred": true }
+            { "type": "mobile", "value": "61427202480", "isPreferred": true }
           ],
-          "dateOfBirth": "1996-12-12",
+          "dateOfBirth": "2005-10-19",
           "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
@@ -37,11 +41,11 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-10T04:16:36.230Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-10T04:16:36.230Z"
         },
         "taxDetails": [
           {
@@ -50,48 +54,51 @@
             "nonSupplyReasonCode": "000000000"
           }
         ],
-        "isPrimaryApplicant": true,
         "entityType": "Individual"
       },
       {
         "person": {
-          "title": "mr",
-          "firstName": "Kid",
-          "middleName": "Tan",
-          "lastName": "Min",
+          "title": "miss",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "536 Addlem Road",
-            "city": "BRIDGEWATER",
-            "region": { "code": "VIC" },
-            "postalCode": "3516",
+            "streetAddress": "49A Watts Road",
+            "city": "RYDE",
+            "region": { "code": "NSW" },
+            "postalCode": "2112",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "536 Addlem Road",
-            "city": "BRIDGEWATER",
-            "region": { "code": "VIC" },
-            "postalCode": "3516",
+            "streetAddress": "49A Watts Road",
+            "city": "RYDE",
+            "region": { "code": "NSW" },
+            "postalCode": "2112",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
-            { "type": "work", "value": "user25@gmail.com", "isPreferred": true }
+            {
+              "type": "work",
+              "value": "user8697@example.com",
+              "isPreferred": true
+            }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61432423423", "isPreferred": true }
+            { "type": "mobile", "value": "61424234234", "isPreferred": true }
           ],
-          "dateOfBirth": "1998-08-17",
-          "gender": "male",
+          "dateOfBirth": "1994-11-11",
+          "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
         "employment": { "category": "Managers", "type": "ICT Managers" },
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-10T04:16:36.230Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-10T04:16:36.230Z"
         },
         "taxDetails": [
           {
@@ -113,14 +120,14 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-01T06:56:54.966Z"
+    "timestamp": "2025-03-10T04:16:36.231Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Mama Meme Leno - Kid Tan Min - May Jay Son",
+        "accountName": "Personal Loan Account",
         "branchCode": "182512",
-        "accountNumber": "000123456789",
+        "accountNumber": "115318175",
         "usedForCredits": true,
         "usedForDebits": true,
         "usedForDividends": true,
@@ -133,12 +140,12 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "1312312312",
-    "pid": "01033",
+    "hin": "312312",
+    "pid": "01042",
     "address": {
-      "addressLines": ["29 Ada Street", "536 Addlem Road"],
-      "postCode": "5000"
+      "addressLines": ["390 Hampton Street ", "49A Watts Road"],
+      "postCode": "3188"
     },
-    "emailAddress": "user24@gmail.com"
+    "emailAddress": "Hershel49@yahoo.com"
   }
 }
