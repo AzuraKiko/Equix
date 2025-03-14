@@ -82,9 +82,9 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "567894123",
-    "pid": "06382",
-    "address": { "addressLines": ["5678 Elm St"], "postCode": "2001" },
-    "emailAddress": "info@bartell.com.au"
+    "hin": "2397864923",
+    "pid": "01042",
+    "address": { "addressLines": ["60 Saint Aubyns Road"], "postCode": "4352" },
+    "emailAddress": "duc.pham+1302@equix.com.au"
   }
 }

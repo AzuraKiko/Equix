@@ -268,9 +268,9 @@
     ]
   },
   "tradingProduct": {
-    "type": "domestic-equities",
-    "canTradeWarrants": true,
-    "contractNote": { "type": "digital", "generationType": "day" }
+      "type": "domestic-equities",
+      "canTradeWarrants": true,
+      "contractNote": { "type": "digital", "generationType": "day" }
   },
   "termsAndConditions": {
     "accepted": true,
