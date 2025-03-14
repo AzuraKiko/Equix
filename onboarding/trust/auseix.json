@@ -1,13 +1,14 @@
 {
-  "customerReferenceNumber": "EQ-EQ-343-967-123-R",
+  "customerReferenceNumber": "EQ-EQ-789-967-707-R",
   "status": "draft",
   "applicant": {
     "entityType": "Trust",
-    "name": "Novus Fintech",
+    "name": "Smith Family Trustee Pty Ltd",
     "type": "other",
-    "accountDesignation": "0223344555",
+    "otherTrustType": "UNIT TRUST",
+    "accountDesignation": "GreenEnergyFund21",
     "emailAddresses": [
-      { "type": "work", "value": "huyen.tran@gmail.com", "isPreferred": true }
+      { "type": "work", "value": "Hallie13@hotmail.com", "isPreferred": true }
     ],
     "establishmentLocation": "AU",
     "abn": "21623914910",
@@ -15,52 +16,52 @@
     "marketingOptedOut": false,
     "industryClassification": { "categoryCode": "A", "typeCode": "01" },
     "registeredAddress": {
-      "streetAddress": "44555/77A Rundle ROAD ",
-      "city": "SALISBURY SOUTH",
+      "streetAddress": "18 Peter STREET ",
+      "city": "LOCKLEYS",
       "region": { "code": "SA" },
-      "postalCode": "5106",
+      "postalCode": "5032",
       "country": { "code": "AU" }
     },
     "postalAddress": {
-      "streetAddress": "676R Gilbert Road",
-      "city": "RESERVOIR",
+      "streetAddress": "26 Roy STREET ",
+      "city": "JEPARIT",
       "region": { "code": "VIC" },
-      "postalCode": "3073",
+      "postalCode": "3423",
       "country": { "code": "AU" }
     },
     "trustees": [
       {
         "person": {
-          "title": "ms",
-          "firstName": "Huyen",
-          "middleName": "Khanh",
-          "lastName": "Tran",
+          "title": "mr",
+          "firstName": "Tevin",
+          "middleName": "Alex",
+          "lastName": "Jacobs",
           "residentialAddress": {
-            "streetAddress": "10009/234 Ho Tung Mau ALLEY ",
-            "city": "24234",
-            "region": { "code": "ACT" },
-            "postalCode": "1000",
+            "streetAddress": "1304/13 Woodroffe AVENUE ",
+            "city": "MAIN BEACH",
+            "region": { "code": "QLD" },
+            "postalCode": "4217",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "6000/41 Bradley STREET ",
-            "city": "DAYBORO",
-            "region": { "code": "QLD" },
-            "postalCode": "4521",
+            "streetAddress": "445A Balcombe ROAD ",
+            "city": "BEAUMARIS",
+            "region": { "code": "VIC" },
+            "postalCode": "3193",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "huyen.tran@gmail.com",
+              "value": "Hallie13@hotmail.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61424234234", "isPreferred": true }
+            { "type": "mobile", "value": "61410703860", "isPreferred": true }
           ],
-          "dateOfBirth": "2002-09-10",
-          "gender": "female",
+          "dateOfBirth": "1978-04-08",
+          "gender": "male",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
         "role": "DIRECTOR",
@@ -72,17 +73,17 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "taxDetails": [
           {
             "country": "AU",
-            "isSupplied": false,
-            "nonSupplyReasonCode": "000000000"
+            "isSupplied": true,
+            "taxIdentificationNumber": "170219941"
           }
         ],
         "isPrimaryApplicant": true,
@@ -91,34 +92,92 @@
       {
         "person": {
           "title": "miss",
-          "firstName": "Quynh",
-          "middleName": "Diem",
-          "lastName": "Bui",
+          "firstName": "Clarabelle",
+          "middleName": "Dean",
+          "lastName": "Hayes",
           "residentialAddress": {
-            "streetAddress": "676R Gilbert Road",
-            "city": "RESERVOIR",
+            "streetAddress": "26 Roy STREET ",
+            "city": "JEPARIT",
             "region": { "code": "VIC" },
-            "postalCode": "3073",
+            "postalCode": "3423",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "676R Gilbert Road",
-            "city": "RESERVOIR",
+            "streetAddress": "26 Roy STREET ",
+            "city": "JEPARIT",
             "region": { "code": "VIC" },
-            "postalCode": "3073",
+            "postalCode": "3423",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "quynh.bui@gmail.com",
+              "value": "Clarabelle.Hayes6@yahoo.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61435345345", "isPreferred": true }
+            { "type": "mobile", "value": "61488687867", "isPreferred": true }
           ],
-          "dateOfBirth": "2001-09-15",
+          "dateOfBirth": "2005-10-19",
+          "gender": "female",
+          "nationalities": [{ "country": "AU", "type": "citizen" }]
+        },
+        "role": "DIRECTOR",
+        "isCompanyBeneficialOwner": false,
+        "isTrustBeneficialOwner": false,
+        "isTrustBeneficiary": false,
+        "isSignatory": true,
+        "employment": { "category": "Managers", "type": "ICT Managers" },
+        "marketingOptedOut": false,
+        "identityVerification": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
+        },
+        "screeningResults": {
+          "status": "verified",
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
+        },
+        "taxDetails": [
+          {
+            "country": "AU",
+            "isSupplied": false,
+            "nonSupplyReasonCode": "000000000"
+          }
+        ],
+        "entityType": "Individual"
+      },
+      {
+        "person": {
+          "title": "mrs",
+          "firstName": "Jaycee",
+          "middleName": "Grace",
+          "lastName": "Ritchie",
+          "residentialAddress": {
+            "streetAddress": "34 Lloyd Street",
+            "city": "DIMBOOLA",
+            "region": { "code": "VIC" },
+            "postalCode": "3414",
+            "country": { "code": "AU" }
+          },
+          "postalAddress": {
+            "streetAddress": "34 Lloyd Street",
+            "city": "DIMBOOLA",
+            "region": { "code": "VIC" },
+            "postalCode": "3414",
+            "country": { "code": "AU" }
+          },
+          "emailAddresses": [
+            {
+              "type": "work",
+              "value": "Jaycee_Ritchie@gmail.com",
+              "isPreferred": true
+            }
+          ],
+          "phoneNumbers": [
+            { "type": "mobile", "value": "61424241159", "isPreferred": true }
+          ],
+          "dateOfBirth": "1999-02-16",
           "gender": "other",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
@@ -131,11 +190,11 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "taxDetails": [
           {
@@ -150,36 +209,36 @@
     "beneficiaryDetails": [
       {
         "person": {
-          "title": "ms",
-          "firstName": "Huyen",
-          "middleName": "Khanh",
-          "lastName": "Tran",
+          "title": "mr",
+          "firstName": "Tevin",
+          "middleName": "Alex",
+          "lastName": "Jacobs",
           "residentialAddress": {
-            "streetAddress": "10009/234 Ho Tung Mau ALLEY ",
-            "city": "24234",
-            "region": { "code": "ACT" },
-            "postalCode": "1000",
+            "streetAddress": "1304/13 Woodroffe AVENUE ",
+            "city": "MAIN BEACH",
+            "region": { "code": "QLD" },
+            "postalCode": "4217",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "6000/41 Bradley STREET ",
-            "city": "DAYBORO",
-            "region": { "code": "QLD" },
-            "postalCode": "4521",
+            "streetAddress": "445A Balcombe ROAD ",
+            "city": "BEAUMARIS",
+            "region": { "code": "VIC" },
+            "postalCode": "3193",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "huyen.tran@gmail.com",
+              "value": "Hallie13@hotmail.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61424234234", "isPreferred": true }
+            { "type": "mobile", "value": "61410703860", "isPreferred": true }
           ],
-          "dateOfBirth": "2002-09-10",
-          "gender": "female",
+          "dateOfBirth": "1978-04-08",
+          "gender": "male",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
         "role": "DIRECTOR",
@@ -189,17 +248,17 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "taxDetails": [
           {
             "country": "AU",
-            "isSupplied": false,
-            "nonSupplyReasonCode": "000000000"
+            "isSupplied": true,
+            "taxIdentificationNumber": "170219941"
           }
         ],
         "isPrimaryApplicant": true,
@@ -208,35 +267,35 @@
       },
       {
         "person": {
-          "title": "miss",
-          "firstName": "Quynh",
-          "middleName": "Diem",
-          "lastName": "Bui",
+          "title": "mrs",
+          "firstName": "Jaycee",
+          "middleName": "Grace",
+          "lastName": "Ritchie",
           "residentialAddress": {
-            "streetAddress": "676R Gilbert Road",
-            "city": "RESERVOIR",
+            "streetAddress": "34 Lloyd Street",
+            "city": "DIMBOOLA",
             "region": { "code": "VIC" },
-            "postalCode": "3073",
+            "postalCode": "3414",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "676R Gilbert Road",
-            "city": "RESERVOIR",
+            "streetAddress": "34 Lloyd Street",
+            "city": "DIMBOOLA",
             "region": { "code": "VIC" },
-            "postalCode": "3073",
+            "postalCode": "3414",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
             {
               "type": "work",
-              "value": "quynh.bui@gmail.com",
+              "value": "Jaycee_Ritchie@gmail.com",
               "isPreferred": true
             }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61435345345", "isPreferred": true }
+            { "type": "mobile", "value": "61424241159", "isPreferred": true }
           ],
-          "dateOfBirth": "2001-09-15",
+          "dateOfBirth": "1999-02-16",
           "gender": "other",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
@@ -247,11 +306,11 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-07T06:44:40.564Z"
+          "completionTimestamp": "2025-03-10T08:12:28.032Z"
         },
         "taxDetails": [
           {
@@ -266,27 +325,27 @@
     ],
     "identityVerification": {
       "status": "verified",
-      "completionTimestamp": "2025-03-07T06:44:40.564Z"
+      "completionTimestamp": "2025-03-10T08:12:28.032Z"
     },
     "screeningResults": {
       "status": "verified",
-      "completionTimestamp": "2025-03-07T06:44:40.564Z"
+      "completionTimestamp": "2025-03-10T08:12:28.032Z"
     },
     "settlor": {
       "isDeceased": false,
       "name": {
-        "title": "mr",
-        "firstName": "Duc",
-        "middleName": "Van",
-        "lastName": "Pham"
+        "title": "mrs",
+        "firstName": "Jaycee",
+        "middleName": "Grace",
+        "lastName": "Ritchie"
       },
       "assetContributionIsImmaterial": false
     },
     "taxDetails": [
       {
         "country": "AU",
-        "isSupplied": true,
-        "taxIdentificationNumber": "170219941"
+        "isSupplied": false,
+        "nonSupplyReasonCode": "000000000"
       }
     ]
   },
@@ -298,14 +357,14 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-07T06:42:19.977Z"
+    "timestamp": "2025-03-10T08:10:36.983Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Huyen Khanh Tran - Duc Van Pham - Quynh Diem Bui",
+        "accountName": "Personal Loan Account",
         "branchCode": "182512",
-        "accountNumber": "000123456789",
+        "accountNumber": "115318175",
         "usedForCredits": true,
         "usedForDebits": true,
         "usedForDividends": true,
@@ -318,16 +377,9 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "2423423",
-    "pid": "01042",
-    "address": {
-      "addressLines": [
-        "10009/234 Ho Tung Mau ALLEY ",
-        "88888/43 Sword STREET ",
-        "676R Gilbert Road"
-      ],
-      "postCode": "3073"
-    },
-    "emailAddress": "huyen.tran@gmail.com"
+    "hin": "567894123",
+    "pid": "06382",
+    "address": { "addressLines": ["5678 Elm St"], "postCode": "2001" },
+    "emailAddress": "info@bartell.com.au"
   }
 }

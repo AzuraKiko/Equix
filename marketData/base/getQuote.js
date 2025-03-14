@@ -20,6 +20,11 @@ const roundToTwo = (value) =>
         ? (Math.round(value * 100) / 100).toFixed(2)
         : value;
 
+const roundToThree = (value) =>
+    (value !== null && !isNaN(value))
+        ? (Math.round(value * 1000) / 1000).toFixed(3)
+        : value;
+
 // Hàm lấy giá trị nhỏ nhất hoặc lớn nhất giữa 2 giá trị (min hoặc max)
 const getMinOrMax = (val1, val2, type) => {
     if (val1 === null) return val2;
@@ -125,7 +130,7 @@ function getQuote(priceASX, priceCXA) {
             volume: (volume.ASX || 0) + (volume.CXA || 0),
 
             // value_traded: tổng giá trị giao dịch của 2 sàn
-            value_traded: (valueTraded.ASX || 0) + (valueTraded.CXA || 0),
+            value_traded: Number(roundToTwo((valueTraded.ASX || 0) + (valueTraded.CXA || 0))),
 
             // indicative_price: giá indicative mới nhất từ 2 sàn
             indicative_price: indicativePrice.ASX === null ? indicativePrice.CXA : indicativePrice.CXA === null ? indicativePrice.ASX : updated.ASX > updated.CXA ? indicativePrice.ASX : indicativePrice.CXA,
@@ -175,15 +180,15 @@ function getQuote(priceASX, priceCXA) {
         };
 
         // Tính toán change_point và change_percent sau khi khởi tạo quote
-        quote.change_point = Number(roundToTwo(quote.trade_price - quote.previous_close));
+        quote.change_point = Number(roundToThree(quote.trade_price - quote.previous_close));
         quote.change_percent = (quote.previous_close > 0) ? Number(roundToSix((quote.change_point / quote.previous_close) * 100)) : 0;
 
         // vwap: tính trung bình gia quyền của 2 sàn
         quote.vwap = quote.volume === 0 ? null : quote.value_traded === null ? null : Number(roundToSix(quote.value_traded / quote.volume)),
 
             expected.push(quote);
-    
-        });
+
+    });
 
     return expected;
 };

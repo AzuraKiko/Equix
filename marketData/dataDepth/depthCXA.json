@@ -2,29 +2,189 @@
   {
     "ask": {
       "0": {
-        "symbol": "ANZ",
+        "symbol": "BHP",
         "side": "Ask",
-        "quantity": 2,
-        "number_of_trades": 1,
-        "price": 34.52,
+        "quantity": 3791,
+        "number_of_trades": 14,
+        "price": 40.24,
         "exchange": "CXA",
-        "timestamp": 1740623721457000,
+        "timestamp": 1741924310717000,
+        "source": "CXA"
+      },
+      "1": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 13592,
+        "number_of_trades": 19,
+        "price": 40.3,
+        "exchange": "CXA",
+        "timestamp": 1741923830480000,
+        "source": "CXA"
+      },
+      "2": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 2353,
+        "number_of_trades": 11,
+        "price": 40.33,
+        "exchange": "CXA",
+        "timestamp": 1741923830349000,
+        "source": "CXA"
+      },
+      "3": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 7037,
+        "number_of_trades": 26,
+        "price": 40.34,
+        "exchange": "CXA",
+        "timestamp": 1741923898703000,
+        "source": "CXA"
+      },
+      "4": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 5823,
+        "number_of_trades": 20,
+        "price": 40.35,
+        "exchange": "CXA",
+        "timestamp": 1741923830468000,
+        "source": "CXA"
+      },
+      "5": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 3018,
+        "number_of_trades": 13,
+        "price": 40.36,
+        "exchange": "CXA",
+        "timestamp": 1741923830468000,
+        "source": "CXA"
+      },
+      "6": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 4464,
+        "number_of_trades": 16,
+        "price": 40.37,
+        "exchange": "CXA",
+        "timestamp": 1741923830468000,
+        "source": "CXA"
+      },
+      "7": {
+        "symbol": "BHP",
+        "side": "Ask",
+        "quantity": 2477,
+        "number_of_trades": 10,
+        "price": 40.38,
+        "exchange": "CXA",
+        "timestamp": 1741923830468000,
         "source": "CXA"
       }
     },
     "bid": {
       "0": {
-        "symbol": "ANZ",
+        "symbol": "BHP",
         "side": "Bid",
-        "quantity": 2,
-        "number_of_trades": 1,
-        "price": 23.02,
+        "quantity": 132,
+        "number_of_trades": 2,
+        "price": 40.16,
         "exchange": "CXA",
-        "timestamp": 1740623721908000,
+        "timestamp": 1741923898703000,
+        "source": "CXA"
+      },
+      "1": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 1038,
+        "number_of_trades": 3,
+        "price": 40.15,
+        "exchange": "CXA",
+        "timestamp": 1741923898703000,
+        "source": "CXA"
+      },
+      "2": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 254,
+        "number_of_trades": 1,
+        "price": 40.14,
+        "exchange": "CXA",
+        "timestamp": 1741923898703000,
+        "source": "CXA"
+      },
+      "3": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 127,
+        "number_of_trades": 1,
+        "price": 40.13,
+        "exchange": "CXA",
+        "timestamp": 1741923898703000,
+        "source": "CXA"
+      },
+      "4": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 256,
+        "number_of_trades": 1,
+        "price": 40.12,
+        "exchange": "CXA",
+        "timestamp": 1741923898703000,
+        "source": "CXA"
+      },
+      "5": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 218,
+        "number_of_trades": 2,
+        "price": 39.31,
+        "exchange": "CXA",
+        "timestamp": 1741923125318000,
+        "source": "CXA"
+      },
+      "6": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 2046,
+        "number_of_trades": 11,
+        "price": 39.3,
+        "exchange": "CXA",
+        "timestamp": 1741923830480000,
+        "source": "CXA"
+      },
+      "7": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 2189,
+        "number_of_trades": 7,
+        "price": 39.27,
+        "exchange": "CXA",
+        "timestamp": 1741923824420000,
+        "source": "CXA"
+      },
+      "8": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 5678,
+        "number_of_trades": 19,
+        "price": 39.26,
+        "exchange": "CXA",
+        "timestamp": 1741923830468000,
+        "source": "CXA"
+      },
+      "9": {
+        "symbol": "BHP",
+        "side": "Bid",
+        "quantity": 5793,
+        "number_of_trades": 24,
+        "price": 39.25,
+        "exchange": "CXA",
+        "timestamp": 1741923830468000,
         "source": "CXA"
       }
     },
-    "total_ask_size": 2,
-    "total_bid_size": 2
+    "total_ask_size": 42555,
+    "total_bid_size": 17731
   }
 ]

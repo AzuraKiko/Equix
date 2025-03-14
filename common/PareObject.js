@@ -19,15 +19,19 @@ const compareObjects = (obj1, obj2, columnNames) => {
     // Lấy all key obj1 và obj2
     let commonKeys = new Set([...Object.keys(obj1), ...Object.keys(obj2)]);
 
-    // const requiredKeys = ["establishmentLocation"];
+    // const requiredKeys = ["applicant.type", "otherTrustType"];
     // commonKeys = Array.from(commonKeys).filter(key => 
     //     requiredKeys.some(requiredKey => key.includes(requiredKey))
+    // );
+
+    // commonKeys = Array.from(commonKeys).filter(key => 
+    //     !requiredKeys.some(requiredKey => key.includes(requiredKey))
     // );
 
     // Lọc các key mà chỉ có trong obj1 nhưng không có trong obj2
     // let commonKeys = Object.keys(obj1).filter(key => !obj2.hasOwnProperty(key));
 
-    // console.log(commonKeys);
+    console.log(commonKeys);
 
     // So sánh từng key chung
     commonKeys.forEach(key => {

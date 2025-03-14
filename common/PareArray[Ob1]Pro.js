@@ -43,6 +43,11 @@ const compareArrayObjects = (arr1, arr2, matchKeys, extraColumns, columnNames) =
         key => !matchKeys.includes(key)
       );
 
+    //   const requiredKeys = ["volume", "value_traded"]
+    //     commonKeys = Array.from(commonKeys).filter(key => 
+    //     requiredKeys.some(requiredKey => key.includes(requiredKey))
+    // );
+
       // So sánh các key còn lại
       commonKeys.forEach((key) => {
         let resultItem = {
@@ -77,7 +82,7 @@ const compareArrayObjects = (arr1, arr2, matchKeys, extraColumns, columnNames) =
   });
 
   console.table(result);
-  // console.table(result.filter((r) => r[columnNames.matchResult] === "❌"));
+  console.table(result.filter((r) => r[columnNames.matchResult] === "❌"));
 
   return result;
 };

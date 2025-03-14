@@ -66,6 +66,13 @@ const fieldMappings = {
     "applicant.otherTrustType": {
         target: "trust_description",
         type: ["string", null],
+        enumMap: {
+            UNIT_TRUST: "UNIT TRUST",
+            DISABILITY_TRUST: "DISABILITY TRUST",
+            PROPERTY_TRUST: "PROPERTY TRUST",
+            HYBRID_TRUST: "HYBRID TRUST",
+            TRADING_TRUST: "TRADING TRUST",
+        },
     },
     "applicant.accountDesignation": {
         target: "account_designation",
@@ -589,20 +596,20 @@ const fieldMappings = {
         type: "object",
     },
     "applicant.settlor.name.title": {
-        target: "applicant_details[index].title",
+        target: "individual_settlor[0].settlor_title",
         type: "string",
         enumMap: { MR: "mr", MRS: "mrs", MS: "ms", MISS: "miss", DR: "dr", MSTR: "master" },
     },
     "applicant.settlor.name.firstName": {
-        target: "individual_settlor.settlor_first_name",
+        target: "individual_settlor[0].settlor_first_name",
         type: "string",
     },
     "applicant.settlor.name.middleName": {
-        target: "individual_settlor.settlor_middle_name",
+        target: "individual_settlor[0].settlor_middle_name",
         type: ["string", null],
     },
     "applicant.settlor.name.lastName": {
-        target: "individual_settlor.settlor_last_name",
+        target: "individual_settlor[0].settlor_last_name",
         type: "string",
     },
     // Maximum 4 Tax Details

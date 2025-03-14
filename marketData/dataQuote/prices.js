@@ -1,10 +1,10 @@
 const prices = [
   {
-    "symbol": "ANZ",
+    "symbol": "BHP",
     "exchange": "ASX",
-    "open": 29.16,
-    "trade_price": 29.89,
-    "previous_close": 31
+    "open": 74.45,
+    "trade_price": 40.2,
+    "previous_close": 0.07
   }
 ];
 module.exports = { prices };

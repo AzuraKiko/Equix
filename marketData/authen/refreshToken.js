@@ -41,9 +41,9 @@ const updateTokens = async () => {
     tokens.tokenASX = await getToken(refreshToken_ASX);
     tokens.tokenCXA = await getToken(refreshToken_CXA);
     tokens.tokenASX_CXA = await getToken(refreshToken_ASX_CXA);
-    tokens.tokenASX_Delay = await getToken(refreshToken_ASX_Delay);
-    tokens.tokenCXA_Delay = await getToken(refreshToken_CXA_Delay);
-    tokens.tokenASX_CXA_Delay = await getToken(refreshToken_ASX_CXA_Delay);
+    // tokens.tokenASX_Delay = await getToken(refreshToken_ASX_Delay);
+    // tokens.tokenCXA_Delay = await getToken(refreshToken_CXA_Delay);
+    // tokens.tokenASX_CXA_Delay = await getToken(refreshToken_ASX_CXA_Delay);
     return tokens;
   } catch (error) {
     console.error("Failed to update tokens:", error.message);

@@ -1,0 +1,196 @@
+{
+  "customerReferenceNumber": "EQ-EQ-374-802-270-R",
+  "status": "draft",
+  "applicant": {
+    "entityType": "Business",
+    "businessType": "company",
+    "registeredName": "Flow business",
+    "industryClassification": { "categoryCode": "A", "typeCode": "01" },
+    "establishmentLocation": "AU",
+    "businessDetails": {
+      "entityType": "Trust",
+      "companyType": "proprietary",
+      "abn": "56286625181",
+      "acn": "623914910",
+      "officeHolders": [
+        {
+          "person": {
+            "title": "miss",
+            "firstName": "Kate",
+            "middleName": "hei",
+            "lastName": "Jonh",
+            "residentialAddress": {
+              "streetAddress": "59D Cornelia Road",
+              "city": "TOONGABBIE",
+              "region": { "code": "NSW" },
+              "postalCode": "2146",
+              "country": { "code": "AU" }
+            },
+            "postalAddress": {
+              "streetAddress": "59D Cornelia Road",
+              "city": "TOONGABBIE",
+              "region": { "code": "NSW" },
+              "postalCode": "2146",
+              "country": { "code": "AU" }
+            },
+            "emailAddresses": [
+              { "type": "work", "value": "kate@gmail.com", "isPreferred": true }
+            ],
+            "phoneNumbers": [
+              { "type": "mobile", "value": "61445677890", "isPreferred": true }
+            ],
+            "dateOfBirth": "1999-01-01",
+            "gender": "female",
+            "nationalities": [{ "country": "AU", "type": "citizen" }]
+          },
+          "role": "sole-director",
+          "isSignatory": true,
+          "employment": { "category": "Managers", "type": "ICT Managers" },
+          "marketingOptedOut": false,
+          "identityVerification": {
+            "status": "verified",
+            "completionTimestamp": "2025-03-06T03:26:50.090Z"
+          },
+          "screeningResults": {
+            "status": "verified",
+            "completionTimestamp": "2025-03-06T03:26:50.090Z"
+          },
+          "taxDetails": [
+            {
+              "country": "AU",
+              "isSupplied": true,
+              "taxIdentificationNumber": "170219941"
+            }
+          ],
+          "isPrimaryApplicant": true,
+          "entityType": "Individual",
+          "isBeneficialOwner": true
+        }
+      ],
+      "beneficialOwners": [
+        {
+          "person": {
+            "title": "miss",
+            "firstName": "Kate",
+            "middleName": "hei",
+            "lastName": "Jonh",
+            "residentialAddress": {
+              "streetAddress": "59D Cornelia Road",
+              "city": "TOONGABBIE",
+              "region": { "code": "NSW" },
+              "postalCode": "2146",
+              "country": { "code": "AU" }
+            },
+            "postalAddress": {
+              "streetAddress": "59D Cornelia Road",
+              "city": "TOONGABBIE",
+              "region": { "code": "NSW" },
+              "postalCode": "2146",
+              "country": { "code": "AU" }
+            },
+            "emailAddresses": [
+              { "type": "work", "value": "kate@gmail.com", "isPreferred": true }
+            ],
+            "phoneNumbers": [
+              { "type": "mobile", "value": "61445677890", "isPreferred": true }
+            ],
+            "dateOfBirth": "1999-01-01",
+            "gender": "female",
+            "nationalities": [{ "country": "AU", "type": "citizen" }]
+          },
+          "isCompanyBeneficialOwner": true,
+          "employment": { "category": "Managers", "type": "ICT Managers" },
+          "marketingOptedOut": false,
+          "identityVerification": {
+            "status": "verified",
+            "completionTimestamp": "2025-03-06T03:26:50.090Z"
+          },
+          "screeningResults": {
+            "status": "verified",
+            "completionTimestamp": "2025-03-06T03:26:50.090Z"
+          },
+          "taxDetails": [
+            {
+              "country": "AU",
+              "isSupplied": true,
+              "taxIdentificationNumber": "170219941"
+            }
+          ],
+          "isPrimaryApplicant": true,
+          "entityType": "Individual"
+        }
+      ],
+      "taxDetails": [
+        {
+          "country": "AU",
+          "isSupplied": true,
+          "taxIdentificationNumber": "170219941"
+        }
+      ],
+      "registeredAddress": {
+        "streetAddress": "51 Arkaba Road",
+        "city": "ALDGATE",
+        "region": { "code": "SA" },
+        "postalCode": "5154",
+        "country": { "code": "AU" }
+      },
+      "postalAddress": {
+        "streetAddress": "51 Arkaba Road",
+        "city": "ALDGATE",
+        "region": { "code": "SA" },
+        "postalCode": "5154",
+        "country": { "code": "AU" }
+      },
+      "principalAddress": {
+        "streetAddress": "63 Hassell Avenue",
+        "city": "KENDENUP",
+        "region": { "code": "WA" },
+        "postalCode": "6323",
+        "country": { "code": "AU" }
+      },
+      "emailAddress": "flow@gmail.com",
+      "phoneNumber": "61445578511"
+    },
+    "identityVerification": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-06T03:26:50.090Z"
+    },
+    "screeningResults": {
+      "status": "verified",
+      "completionTimestamp": "2025-03-06T03:26:50.090Z"
+    }
+  },
+  "tradingProduct": {
+    "type": "domestic-equities",
+    "canTradeWarrants": true,
+    "contractNote": { "type": "digital", "generationType": "day" }
+  },
+  "termsAndConditions": {
+    "accepted": true,
+    "methodOfAcceptance": "digital",
+    "timestamp": "2025-03-06T03:20:39.697Z"
+  },
+  "settlement": {
+    "details": [
+      {
+        "accountName": "Kate Hei Jonh",
+        "branchCode": "182512",
+        "accountNumber": "000123456789",
+        "usedForCredits": true,
+        "usedForDebits": true,
+        "usedForDividends": true,
+        "type": "Direct_Entry_Account"
+      }
+    ],
+    "nettingPolicy": "net",
+    "holdFunds": false,
+    "redirectDividends": true
+  },
+  "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
+  "holdingDetails": {
+    "hin": "567894123",
+    "pid": "06382",
+    "address": { "addressLines": ["5678 Elm St"], "postCode": "2001" },
+    "emailAddress": "info@bartell.com.au"
+  }
+}

@@ -15,7 +15,7 @@ const getValueArray = (obj, key) => {
       return Array.isArray(acc[arrayKey]) ? acc[arrayKey][parseInt(index)] : undefined;
     }
 
-    return acc[k] !== undefined ? acc[k] : undefined;
+    return acc[k] !== undefined && acc[k] !== null ? acc[k] : undefined;
   }, obj);
 };
 

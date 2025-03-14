@@ -404,6 +404,20 @@ Object.keys(equixMapping).forEach(key => {
     }
 });
 
+// Duyệt qua tất cả các key trong equixMapping
+Object.keys(equixMapping).forEach(key => {
+    if (key.includes("streetAddress")) {
+        equixMapping[key] = equixMapping[key].trim();
+    }
+});
+
+// Duyệt qua tất cả các key trong ausiexMapping
+Object.keys(ausiexMapping).forEach(key => {
+    if (key.includes("streetAddress")) {
+        ausiexMapping[key] = ausiexMapping[key].trim();
+    }
+});
+
 const columnNames1 = {
     fieldName: "Field Name",
     compareValue: "Actual Value",

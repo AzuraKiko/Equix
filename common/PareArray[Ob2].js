@@ -96,6 +96,15 @@ const compareArrayObjects = (arr1, arr2, matchKeys, columnNames) => {
       // Bỏ qua các matchKeys, so sánh các key còn lại
       let obj1Filtered = {};
       let obj2Filtered = {};
+      // const requireKeys = ["volume", "value_traded"]
+      // requireKeys.forEach(key => {
+      //   if (key in obj1) {
+      //     obj1Filtered[key] = obj1[key];
+      //   }
+      //   if (key in obj2) {
+      //     obj2Filtered[key] = obj2[key];
+      //   }
+      // });
 
       Object.keys(obj1).forEach(key => {
         if (!matchKeys.includes(key)) {

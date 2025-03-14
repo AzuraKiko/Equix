@@ -1,35 +1,39 @@
 {
-  "customerReferenceNumber": "EQ-EQ-480-772-651-R",
+  "customerReferenceNumber": "EQ-EQ-003-046-844-R",
   "status": "draft",
   "applicant": {
     "parties": [
       {
         "person": {
-          "title": "ms",
-          "firstName": "Mama",
-          "middleName": "Meme",
-          "lastName": "Leno",
+          "title": "mrs",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "29 Ada Street",
-            "city": "ADELAIDE",
+            "streetAddress": "56 Dickenson Street",
+            "city": "IRON KNOB",
             "region": { "code": "SA" },
-            "postalCode": "5000",
+            "postalCode": "5611",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "29 Ada Street",
-            "city": "ADELAIDE",
+            "streetAddress": "56 Dickenson Street",
+            "city": "IRON KNOB",
             "region": { "code": "SA" },
-            "postalCode": "5000",
+            "postalCode": "5611",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
-            { "type": "work", "value": "user24@gmail.com", "isPreferred": true }
+            {
+              "type": "work",
+              "value": "hoan.nguyen.x9V@equix.com.au",
+              "isPreferred": true
+            }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61424234324", "isPreferred": true }
+            { "type": "mobile", "value": "61424342334", "isPreferred": true }
           ],
-          "dateOfBirth": "1996-12-12",
+          "dateOfBirth": "1994-11-16",
           "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
@@ -37,61 +41,64 @@
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-13T08:52:46.901Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-13T08:52:46.901Z"
         },
         "taxDetails": [
           {
             "country": "AU",
-            "isSupplied": false,
-            "nonSupplyReasonCode": "000000000"
+            "isSupplied": true,
+            "taxIdentificationNumber": "170219941"
           }
         ],
-        "isPrimaryApplicant": true,
         "entityType": "Individual"
       },
       {
         "person": {
-          "title": "mr",
-          "firstName": "Kid",
-          "middleName": "Tan",
-          "lastName": "Min",
+          "title": "mrs",
+          "firstName": "Huyen",
+          "middleName": "Khanh",
+          "lastName": "Tran",
           "residentialAddress": {
-            "streetAddress": "536 Addlem Road",
-            "city": "BRIDGEWATER",
-            "region": { "code": "VIC" },
-            "postalCode": "3516",
+            "streetAddress": "1000/36 Delacy Avenue ",
+            "city": "KAIMKILLENBUN",
+            "region": { "code": "WA" },
+            "postalCode": "4406",
             "country": { "code": "AU" }
           },
           "postalAddress": {
-            "streetAddress": "536 Addlem Road",
-            "city": "BRIDGEWATER",
-            "region": { "code": "VIC" },
-            "postalCode": "3516",
+            "streetAddress": "1000/36 Delacy Avenue ",
+            "city": "KAIMKILLENBUN",
+            "region": { "code": "WA" },
+            "postalCode": "4406",
             "country": { "code": "AU" }
           },
           "emailAddresses": [
-            { "type": "work", "value": "user25@gmail.com", "isPreferred": true }
+            {
+              "type": "work",
+              "value": "hoan.nguyen.x9V@equix.com.au",
+              "isPreferred": true
+            }
           ],
           "phoneNumbers": [
-            { "type": "mobile", "value": "61432423423", "isPreferred": true }
+            { "type": "mobile", "value": "61424342334", "isPreferred": true }
           ],
-          "dateOfBirth": "1998-08-17",
-          "gender": "male",
+          "dateOfBirth": "1994-11-16",
+          "gender": "female",
           "nationalities": [{ "country": "AU", "type": "citizen" }]
         },
         "employment": { "category": "Managers", "type": "ICT Managers" },
         "marketingOptedOut": false,
         "identityVerification": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-13T08:52:46.901Z"
         },
         "screeningResults": {
           "status": "verified",
-          "completionTimestamp": "2025-03-01T06:56:54.964Z"
+          "completionTimestamp": "2025-03-13T08:52:46.901Z"
         },
         "taxDetails": [
           {
@@ -113,14 +120,14 @@
   "termsAndConditions": {
     "accepted": true,
     "methodOfAcceptance": "digital",
-    "timestamp": "2025-03-01T06:56:54.966Z"
+    "timestamp": "2025-03-13T08:52:46.902Z"
   },
   "settlement": {
     "details": [
       {
-        "accountName": "Mama Meme Leno - Kid Tan Min - May Jay Son",
+        "accountName": "Personal Loan Account",
         "branchCode": "182512",
-        "accountNumber": "000123456789",
+        "accountNumber": "115318175",
         "usedForCredits": true,
         "usedForDebits": true,
         "usedForDividends": true,
@@ -133,12 +140,12 @@
   },
   "adviser": { "code": "uatsentadv152", "brokerageCode": "AAB" },
   "holdingDetails": {
-    "hin": "1312312312",
-    "pid": "01033",
+    "hin": "9274234324",
+    "pid": "20003",
     "address": {
-      "addressLines": ["29 Ada Street", "536 Addlem Road"],
-      "postCode": "5000"
+      "addressLines": ["56 Dickenson Street", "1000/36 Delacy Avenue "],
+      "postCode": "5611"
     },
-    "emailAddress": "user24@gmail.com"
+    "emailAddress": "hoan.nguyen.x9V@equix.com.au"
   }
 }
